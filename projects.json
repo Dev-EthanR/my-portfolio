@@ -1,0 +1,31 @@
+[
+  {
+    "id": 1,
+    "title": "Job Tracker",
+    "slug": "job-tracker",
+    "description": "A responsive, accessible job application tracking web app that helps users manage applications across multiple stages using a Kanban-style workflow.",
+    "techologies": [
+      "Next.js",
+      "React",
+      "Tailwindcss",
+      "Prisma",
+      "TypeScript",
+      "Postgres"
+    ],
+    "features": [
+      "Four application stages (Applied, Interview, Offer, Rejected)",
+      "Drag & drop cards between columns",
+      "Modal-based form",
+      "Visual breakdown of applications with graph"
+    ],
+    "image": "/projects/job-tracker/desktop.png",
+    "gallery": [
+      "/projects/job-tracker/analytics.png",
+      "/projects/job-tracker/modal.png",
+      "/projects/job-tracker/application-details.png",
+      "/projects/job-tracker/mobile.png"
+    ],
+    "live": "https://job-tracker-fullstack-two.vercel.app",
+    "github": "https://github.com/Dev-EthanR/job-tracker-fullstack"
+  }
+]

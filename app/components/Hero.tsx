@@ -1,6 +1,6 @@
 const Hero = () => {
   return (
-    <header>
+    <header className="flex flex-col items-center">
       <h1 className="text-5xl font-semibold mb-4">Ethan Rechichi</h1>
       <h2 className="text-2xl font-light border-b border-white/25 w-fit mb-4 pb-1.5">
         Full Stack Developer
