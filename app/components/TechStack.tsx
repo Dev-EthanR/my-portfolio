@@ -9,7 +9,7 @@ const TechStack = () => {
     { title: "Next.js", src: "/badges/nextjs.webp" },
     { title: "HTML", src: "/badges/html.png" },
     { title: "CSS", src: "/badges/css.png" },
-    { title: "Tailwind", src: "/badges/tailwind.png" },
+    { title: "Tailwind", src: "/badges/tailwindcss.png" },
     { title: "SASS", src: "/badges/sass.png" },
     { title: "Bootstrap", src: "/badges/bootstrap.png" },
     { title: "Prisma", src: "/badges/prisma.jpg" },
