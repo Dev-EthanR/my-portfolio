@@ -9,6 +9,7 @@ export interface Project {
   description: string;
   techologies: string[];
   features: string[];
+  futureImprovements: string[];
   image: string;
   gallery: string[];
   live: string;
@@ -20,7 +21,7 @@ interface Props {
 }
 const ProjectDetails = ({ data }: Props) => {
   return (
-    <div className="flex flex-col items-center gap-4 mb-6">
+    <div className="flex flex-col items-center gap-6 mb-6">
       <h1 className="text-5xl font-bold ">{data.title}</h1>
       <h2 className="text-xl font-medium  mb-3 max-w-170 text-center">
         {data.description}
@@ -33,19 +34,29 @@ const ProjectDetails = ({ data }: Props) => {
         className="mb-5"
       />
       <h3 className="text-left text-xl font-medium">Tech Stack:</h3>
-      <div className="flex gap-2 flex-wrap">
+      <div className="flex gap-2 flex-wrap mb-4">
         {data.techologies.map((tech) => (
           <Badge key={tech} name={tech} />
         ))}
       </div>
-      <ul>
-        <h3 className="text-xl font-medium mb-2">Features:</h3>
-        {data.features.map((feature) => (
-          <li key={feature} className="list-disc">
-            {feature}
-          </li>
-        ))}
-      </ul>
+      <div className="flex gap-4">
+        <ul className="border-r py border-accent pl-8 mr-3">
+          <h3 className="text-xl font-medium mb-2">Features:</h3>
+          {data.features.map((feature) => (
+            <li key={feature} className="list-disc max-w-90">
+              {feature}
+            </li>
+          ))}
+        </ul>
+        <ul>
+          <h3 className="text-xl font-medium mb-2 ">Future Improvments:</h3>
+          {data.futureImprovements.map((future) => (
+            <li key={future} className="list-disc max-w-90">
+              {future}
+            </li>
+          ))}
+        </ul>
+      </div>
       <div>
         <h3 className="text-xl font-medium mb-2">Gallery:</h3>
         <div className="grid grid-cols-2">

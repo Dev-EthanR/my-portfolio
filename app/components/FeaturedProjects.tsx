@@ -1,5 +1,6 @@
 import ProjectCard from "./ProjectCard";
 import Link from "next/link";
+import jsonData from "@/projects.json";
 
 const FeaturedProjects = () => {
   return (
@@ -10,11 +11,14 @@ const FeaturedProjects = () => {
       </p>
       <div className="grid grid-cols-1 w-fit gap-6 mb-10 ">
         {/*md:grid-cols-3*/}
-        <ProjectCard
-          imageSrc="/Job-Tracker.png"
-          title="Job Application Tracker"
-          href="/projects/job-tracker"
-        />
+        {jsonData.slice(0, 3).map((data) => (
+          <ProjectCard
+            key={data.id}
+            imageSrc={data.image}
+            title={data.title}
+            href={`/projects/${data.slug}`}
+          />
+        ))}
       </div>
       <Link
         href="/projects"
