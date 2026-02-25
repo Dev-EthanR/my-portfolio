@@ -31,5 +31,105 @@
     ],
     "live": "https://job-tracker-fullstack-two.vercel.app",
     "github": "https://github.com/Dev-EthanR/job-tracker-fullstack"
+  },
+  {
+    "id": 2,
+    "title": "Frontend Quiz App",
+    "slug": "frontend-quiz-app",
+    "description": "Frontend Quiz App is an interactive web application that allows users to test their knowledge of frontend development topics including HTML, CSS, JavaScript, and Accessibility.",
+    "techologies": ["HTML", "CSS", "JavaScript"],
+    "features": [
+      "Multiple-choice questions",
+      "Instant answer selection feedback",
+      "Final score summary screen",
+      "Fully responsive design (mobile, tablet, desktop)"
+    ],
+    "futureImprovements": [
+      "Add a timer for each question",
+      "Add score history"
+    ],
+    "image": "/projects/frontend-quiz/home.png",
+    "gallery": [
+      "/projects/frontend-quiz/select.png",
+      "/projects/frontend-quiz/correct.png",
+      "/projects/frontend-quiz/incorrect.png",
+      "/projects/frontend-quiz/endscreen.png"
+    ],
+    "live": "https://frontend-quiz-app-jade.vercel.app/",
+    "github": "https://github.com/Dev-EthanR/frontend-quiz-app"
+  },
+  {
+    "id": 3,
+    "title": "BMI Calculator",
+    "slug": "bmi-calculator",
+    "description": "BMI Calculator is a simple and user-friendly web application that lets users calculate their Body Mass Index (BMI) based on their weight and height",
+    "techologies": ["HTML", "SASS", "JavaScript"],
+    "features": [
+      "Input for height and weight",
+      "Calculates BMI instantly",
+      "hows BMI category and result message",
+      "Metric and Imperial calculations",
+      "Fully responsive design"
+    ],
+    "futureImprovements": [],
+    "image": "/projects/bmi-calculator/home.png",
+    "gallery": [
+      "/projects/bmi-calculator/mobile.png",
+      "/projects/bmi-calculator/tablet.png",
+      "/projects/bmi-calculator/page.png",
+      "/projects/bmi-calculator/metric.png",
+      "/projects/bmi-calculator/imperial.png"
+    ],
+    "live": "https://bmi-calculator-seven-kappa.vercel.app/",
+    "github": "https://github.com/Dev-EthanR/bmi-calculator/tree/main"
+  },
+  {
+    "id": 4,
+    "title": "Movie Watchlist",
+    "slug": "movie-watchlist",
+    "description": "Movie Watchlist is a web application that lets users search for movies and TV shows, then add them to a personal watchlist so you can track what you want to watch and what you’ve already seen.",
+    "techologies": ["JavaScript", "React", "Tailwindcss"],
+    "features": [
+      "Search for movies and TV shows by title",
+      "Add items to your watchlist",
+      "View your watchlist with posters/titles",
+      "Remove items you no longer want to track",
+      "Responsive UI",
+      "Local storage support so your list persists in the browser"
+    ],
+    "futureImprovements": [
+      "Detailed movie information",
+      "Filter/sort watchlist (e.g., genre, year, rating)"
+    ],
+    "image": "/projects/movie-watchlist/homep.png",
+    "gallery": [
+      "/projects/movie-watchlist/mobile.png",
+      "/projects/movie-watchlist/search.png",
+      "/projects/movie-watchlist/watchlist.png"
+    ],
+    "live": "https://movie-watchlist-plum-pi.vercel.app/",
+    "github": "https://github.com/Dev-EthanR/Movie-Watchlist/tree/main"
+  },
+  {
+    "id": 5,
+    "title": "Password Generator",
+    "slug": "password-generator",
+    "description": "Password Generator is a simple and practical web application that helps users create strong, secure passwords with ease.",
+    "techologies": ["HTML", "CSS", "TailwJavaScriptindcss"],
+    "features": [
+      "Generate random secure passwords",
+      "Adjustable password length",
+      "Copy to clipboard with one click",
+      "Password strength meter"
+    ],
+    "futureImprovements": [],
+    "image": "/projects/password-generator/home.png",
+    "gallery": [
+      "/projects/password-generator/generate.png",
+      "/projects/password-generator/copy.png",
+      "/projects/password-generator/weak.png"
+    ],
+    "live": "https://password-generator-app-pearl.vercel.app/",
+    "github": "https://github.com/Dev-EthanR/password-generator-app"
   }
 ]

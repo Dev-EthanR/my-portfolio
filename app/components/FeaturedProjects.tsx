@@ -9,8 +9,7 @@ const FeaturedProjects = () => {
       <p className="text-sm font-light text-gray-300 mb-4">
         Some of my recent work:
       </p>
-      <div className="grid grid-cols-1 w-fit gap-6 mb-10 ">
-        {/*md:grid-cols-3*/}
+      <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 w-fit gap-6 mb-10 ">
         {jsonData.slice(0, 3).map((data) => (
           <ProjectCard
             key={data.id}

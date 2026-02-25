@@ -12,10 +12,16 @@ const ProjectCard = ({ details, href }: Props) => {
   return (
     <Link
       href={href}
-      className="border-b-accent border-gray-400 border hover:scale-105 transition-transform duration-300 cursor-pointer w-112.5"
+      className="border-b-accent border-gray-400 border hover:scale-105 transition-transform duration-300 cursor-pointer w-112.5 flex flex-col"
     >
-      <Image src={details.image} alt={details.title} width={450} height={400} />
-      <div className="bg-surface py-3 px-6">
+      <Image
+        className="w-full h-60 max-h-90 object-cover"
+        src={details.image}
+        alt={details.title}
+        width={450}
+        height={400}
+      />
+      <div className="bg-surface py-3 px-6 grow">
         <h3 className="font-medium mb-2">{details.title}</h3>
         <div className="flex flex-wrap gap-2">
           {details.techologies.map((tech) => (
