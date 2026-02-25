@@ -3,7 +3,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="flex flex-col gap-2 mt-12 border-accent border w-160 mx-auto p-3 mb-8 ">
+    <div className="flex flex-col gap-2 mt-12 border-primary border w-160 mx-auto p-3 mb-8 ">
       <Link href="mailto:ethanrechichi@icloud.com">
         Email: ethanrechichi@icloud.com
       </Link>

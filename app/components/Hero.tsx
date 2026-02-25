@@ -6,7 +6,7 @@ const Hero = () => {
         Full Stack Developer
       </h2>
       <h3 className="mb-3 ">📍 Melbourne, Australia 🇦🇺</h3>
-      <p className="text-sm font-light text-gray-300 border-b-accent border-b pb-2">
+      <p className="text-sm font-light text-gray-300 border-b-primary border-b pb-2">
         Striving to be the improve each day
       </p>
     </header>

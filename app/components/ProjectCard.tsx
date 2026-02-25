@@ -1,22 +1,28 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { Project } from "../entities/project";
+import Badge from "@/app/projects/[project]/components/Badge";
 
 interface Props {
-  imageSrc: string;
-  title: string;
+  details: Project;
   href: string;
 }
 
-const ProjectCard = ({ imageSrc, title, href }: Props) => {
+const ProjectCard = ({ details, href }: Props) => {
   return (
     <Link
       href={href}
-      className="border-b-accent border-gray-400 border hover:scale-105 transition-transform duration-300 cursor-pointer"
+      className="border-b-accent border-gray-400 border hover:scale-105 transition-transform duration-300 cursor-pointer w-112.5"
     >
-      <Image src={imageSrc} alt={title} width={450} height={400} />
-      <div className="bg-surface p-2 px-6">
-        <h3 className="font-medium">{title}</h3>
+      <Image src={details.image} alt={details.title} width={450} height={400} />
+      <div className="bg-surface py-3 px-6">
+        <h3 className="font-medium mb-2">{details.title}</h3>
+        <div className="flex flex-wrap gap-2">
+          {details.techologies.map((tech) => (
+            <Badge key={tech} name={tech} />
+          ))}
+        </div>
       </div>
     </Link>
   );

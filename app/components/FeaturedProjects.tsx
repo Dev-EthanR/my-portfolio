@@ -14,15 +14,14 @@ const FeaturedProjects = () => {
         {jsonData.slice(0, 3).map((data) => (
           <ProjectCard
             key={data.id}
-            imageSrc={data.image}
-            title={data.title}
+            details={data}
             href={`/projects/${data.slug}`}
           />
         ))}
       </div>
       <Link
         href="/projects"
-        className="bg-surface p-4 border-gray-500 border hover:bg-elevated transition-colors duration-200"
+        className="bg-surface p-4 border-accent border hover:bg-elevated transition-colors duration-200"
       >
         View All Projects
       </Link>
