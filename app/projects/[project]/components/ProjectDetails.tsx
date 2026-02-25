@@ -1,20 +1,10 @@
+import { Project } from "@/app/entities/project";
 import Image from "next/image";
-import Badge from "./Badge";
-import Link from "next/link";
-
-export interface Project {
-  id: number;
-  title: string;
-  slug: string;
-  description: string;
-  techologies: string[];
-  features: string[];
-  futureImprovements: string[];
-  image: string;
-  gallery: string[];
-  live: string;
-  github: string;
-}
+import Features from "./ProjectDetails/Features";
+import FutureImprovements from "./ProjectDetails/FutureImprovements";
+import Gallery from "./ProjectDetails/Gallery";
+import Links from "./ProjectDetails/Links";
+import Technologies from "./ProjectDetails/technologies";
 
 interface Props {
   data: Project;
@@ -33,55 +23,13 @@ const ProjectDetails = ({ data }: Props) => {
         alt=""
         className="mb-5"
       />
-      <h3 className="text-left text-xl font-medium">Tech Stack:</h3>
-      <div className="flex gap-2 flex-wrap mb-4">
-        {data.techologies.map((tech) => (
-          <Badge key={tech} name={tech} />
-        ))}
-      </div>
+      <Technologies data={data} />
       <div className="flex gap-4">
-        <ul className="border-r py border-accent pl-8 mr-3">
-          <h3 className="text-xl font-medium mb-2">Features:</h3>
-          {data.features.map((feature) => (
-            <li key={feature} className="list-disc max-w-90">
-              {feature}
-            </li>
-          ))}
-        </ul>
-        <ul>
-          <h3 className="text-xl font-medium mb-2 ">Future Improvments:</h3>
-          {data.futureImprovements.map((future) => (
-            <li key={future} className="list-disc max-w-90">
-              {future}
-            </li>
-          ))}
-        </ul>
+        <Features data={data} />
+        <FutureImprovements data={data} />
       </div>
-      <div>
-        <h3 className="text-xl font-medium mb-2">Gallery:</h3>
-        <div className="grid grid-cols-2">
-          {data.gallery.map((image) => (
-            <Image key={image} src={image} width={400} height={100} alt="" />
-          ))}
-        </div>
-      </div>
-      <div className="flex gap-7">
-        <Link
-          href={data.live}
-          target="_blank"
-          className="bg-primary px-4 py-1.5 "
-        >
-          🔗 Live Demo
-        </Link>
-        <Link
-          href={data.github}
-          target="_blank"
-          className="bg-primary px-4 py-1.5 flex items-center gap-2"
-        >
-          <Image src="/logos/github.png" alt="Github" width={25} height={25} />
-          Source Code
-        </Link>
-      </div>
+      <Gallery data={data} />
+      <Links data={data} />
     </div>
   );
 };
