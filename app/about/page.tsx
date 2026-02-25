@@ -5,7 +5,7 @@ const page = () => {
     <div className="flex flex-col items-center mt-9">
       <h1 className="text-5xl font-bold mb-6">Hi, I'm Ethan Rechichi</h1>
       <p className="font-extralight text-xl text-left leading-8 max-w-170 mb-20">
-        I'm a 21 year old full-stack developer based in{" "}
+        I'm a full-stack developer based in{" "}
         <span className="font-semibold">Melbourne, Australia</span> building web
         applications with <span className="font-semibold">React.js</span>,{" "}
         <span className="font-semibold">Next.js</span>,{" "}

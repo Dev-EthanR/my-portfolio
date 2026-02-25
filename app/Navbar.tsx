@@ -14,6 +14,15 @@ const Navbar = () => {
           <Link href={link.href}>{link.name}</Link>
         </li>
       ))}
+      <li>
+        <Link
+          className="border border-accent px-3 py-2 hover:bg-accent font-medium"
+          href={"/Ethan_Rechichi.pdf"}
+          download
+        >
+          Resume
+        </Link>
+      </li>
     </ul>
   );
 };
