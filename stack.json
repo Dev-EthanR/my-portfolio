@@ -1,13 +1,14 @@
 [
+  { "title": "HTML", "src": "/badges/html.png" },
+  { "title": "CSS", "src": "/badges/css.png" },
   { "title": "JavaScript", "src": "/badges/javascript.webp" },
   { "title": "TypeScript", "src": "/badges/typescript.png" },
   { "title": "React", "src": "/badges/react.svg" },
   { "title": "Next.js", "src": "/badges/nextjs.webp" },
-  { "title": "HTML", "src": "/badges/html.png" },
-  { "title": "CSS", "src": "/badges/css.png" },
-  { "title": "TailwindCSS", "src": "/badges/tailwindcss.png" },
+  { "title": "Node.js", "src": "/badges/nodejs.png" },
   { "title": "SASS", "src": "/badges/sass.png" },
   { "title": "Bootstrap", "src": "/badges/bootstrap.png" },
+  { "title": "TailwindCSS", "src": "/badges/tailwindcss.png" },
   { "title": "Prisma", "src": "/badges/prisma.jpg" },
   { "title": "Git", "src": "/badges/git.svg" },
   { "title": "Vercel", "src": "/badges/vercel.svg" }
