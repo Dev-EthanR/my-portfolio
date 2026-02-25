@@ -9,8 +9,7 @@ const page = () => {
         {jsonData.map((data) => (
           <ProjectCard
             key={data.id}
-            imageSrc={data.image}
-            title={data.title}
+            details={data}
             href={`/projects/${data.slug}`}
           />
         ))}
