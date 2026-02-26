@@ -12,8 +12,8 @@ interface Props {
 const ProjectDetails = ({ data }: Props) => {
   return (
     <div className="flex flex-col items-center gap-6 mb-6">
-      <h1 className="text-5xl font-bold ">{data.title}</h1>
-      <h2 className="text-xl font-medium  mb-3 max-w-170 text-center">
+      <h1 className="text-4xl md:text-5xl font-bold ">{data.title}</h1>
+      <h2 className="text-md md:text-xl font-medium  mb-3 max-w-170 text-center">
         {data.description}
       </h2>
       <Image
@@ -24,7 +24,7 @@ const ProjectDetails = ({ data }: Props) => {
         className="mb-5"
       />
       <Technologies data={data} />
-      <div className="flex gap-4">
+      <div className="flex gap-4 flex-col md:flex-row mx-3">
         <Features data={data} />
         <FutureImprovements data={data} />
       </div>

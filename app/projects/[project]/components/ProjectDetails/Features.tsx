@@ -9,7 +9,7 @@ const Features = ({ data }: Props) => {
     <ul>
       <h3 className="text-xl font-medium mb-2">Features:</h3>
       {data.features.map((feature) => (
-        <li key={feature} className="list-disc max-w-90">
+        <li key={feature} className="list-disc max-w-90  text-sm md:text-base">
           {feature}
         </li>
       ))}

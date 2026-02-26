@@ -12,17 +12,14 @@ const FeaturedProjects = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-fit gap-6 mb-10 ">
         {jsonData.slice(0, 3).map((data, index) => (
           <span
+            key={data.id}
             className={
               index === 2
                 ? "md:col-span-2 place-items-center lg:col-span-1"
                 : ""
             }
           >
-            <ProjectCard
-              key={data.id}
-              details={data}
-              href={`/projects/${data.slug}`}
-            />
+            <ProjectCard details={data} href={`/projects/${data.slug}`} />
           </span>
         ))}
       </div>

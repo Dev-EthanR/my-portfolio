@@ -23,7 +23,7 @@ const Gallery = ({ data }: Props) => {
         {data.gallery.map((image, index) => (
           <button onClick={() => handleImageClick(index)} key={image}>
             <Image
-              className="w-50 h-50 object-cover cursor-pointer"
+              className="size-35 md:size-50 object-cover cursor-pointer"
               src={image}
               width={500}
               height={500}
