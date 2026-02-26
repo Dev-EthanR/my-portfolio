@@ -9,7 +9,7 @@ const Badge = ({ imageSrc, title }: Props) => {
   return (
     <div className="relative ">
       <Image
-        className="peer rounded-md"
+        className="peer rounded-md w-10 md:w-12.5"
         src={imageSrc}
         alt={title}
         width={50}

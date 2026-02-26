@@ -1,7 +1,9 @@
 const Hero = () => {
   return (
     <header className="flex flex-col items-center  max-w-160 mx-auto">
-      <h1 className="text-5xl font-semibold mb-4">Ethan Rechichi</h1>
+      <h1 className="text-4xl md:text-5xl font-semibold mb-4">
+        Ethan Rechichi
+      </h1>
       <h2 className="text-2xl font-light border-b border-white/25 w-fit mb-4 pb-1.5 text-center">
         Full Stack Developer
       </h2>

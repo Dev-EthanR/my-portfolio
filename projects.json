@@ -7,7 +7,7 @@
     "techologies": [
       "Next.js",
       "React",
-      "Tailwindcss",
+      "TailwindCSS",
       "Prisma",
       "TypeScript",
       "Postgres"
@@ -88,7 +88,7 @@
     "title": "Movie Watchlist",
     "slug": "movie-watchlist",
     "description": "Movie Watchlist is a web application that lets users search for movies and TV shows, then add them to a personal watchlist so you can track what you want to watch and what you’ve already seen.",
-    "techologies": ["JavaScript", "React", "Tailwindcss"],
+    "techologies": ["JavaScript", "React", "TailwindCSS", "API"],
     "features": [
       "Search for movies and TV shows by title",
       "Add items to your watchlist",
@@ -115,7 +115,7 @@
     "title": "Password Generator",
     "slug": "password-generator",
     "description": "Password Generator is a simple and practical web application that helps users create strong, secure passwords with ease.",
-    "techologies": ["HTML", "CSS", "TailwJavaScriptindcss"],
+    "techologies": ["HTML", "CSS", "JavaScript"],
     "features": [
       "Generate random secure passwords",
       "Adjustable password length",
