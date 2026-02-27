@@ -1,7 +1,8 @@
 "use client";
 import { Project } from "@/app/entities/project";
+import DisableBodyScroll from "@/app/utils/DisableBodyScroll";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 interface Props {
   images: Project["gallery"];
@@ -75,15 +76,3 @@ const Carousel = ({ images, onClose, imageSelected }: Props) => {
 };
 
 export default Carousel;
-
-const DisableBodyScroll = () => {
-  useEffect(() => {
-    document.body.style.overflow = "hidden";
-
-    return () => {
-      document.body.style.overflow = "auto";
-    };
-  }, []);
-
-  return null;
-};

@@ -15,7 +15,7 @@ const ProjectCard = ({ details, href }: Props) => {
       className="border-b-accent border-gray-400 border hover:scale-105 transition-transform duration-300 cursor-pointer w-80  lg:w-80 xl:w-95 2xl:w-112.5 flex flex-col h-full"
     >
       <Image
-        className="w-full h-60 max-h-90 object-cover lg:h-40 xl:h-50 2xl:h-60"
+        className="w-full h-60 max-h-90 object-cover lg:h-40 xl:h-50 2xl:h-60 select-none"
         src={details.image}
         alt={details.title}
         width={450}

@@ -32,6 +32,7 @@ const Gallery = ({ data }: Props) => {
           </button>
         ))}
       </div>
+
       {modalOpen && (
         <Carousel
           images={data.gallery}
