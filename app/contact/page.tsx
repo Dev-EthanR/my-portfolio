@@ -1,5 +1,4 @@
-import Link from "next/link";
-import React from "react";
+import Form from "./Form";
 
 const ContactPage = () => {
   return (
@@ -10,6 +9,7 @@ const ContactPage = () => {
       <h2 className="text-lg md:text-2xl font-medium mb-6">
         Currently seeking junior full-stack opportunities.
       </h2>
+      <Form />
     </div>
   );
 };
