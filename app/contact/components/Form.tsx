@@ -4,6 +4,12 @@ import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { IoIosSend } from "react-icons/io";
 import FormLabel from "./FormLabel";
+import { body } from "framer-motion/client";
+
+interface Props {
+  onSuccess: (toastOpen: boolean) => void;
+  statusCode: (status: number) => void;
+}
 
 const ContactSchema = z.object({
   fullName: z.string().min(1, "Name is required").max(55),
@@ -16,14 +22,25 @@ const ContactSchema = z.object({
 
 export type Contact = z.infer<typeof ContactSchema>;
 
-const Form = () => {
+const Form = ({ onSuccess, statusCode }: Props) => {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm<Contact>({ resolver: zodResolver(ContactSchema) });
-  const onSubmit: SubmitHandler<Contact> = async (data: Contact) =>
-    console.log(data);
+  const onSubmit: SubmitHandler<Contact> = async (data: Contact) => {
+    const response = await fetch("/api/send-email", {
+      method: "POST",
+      body: JSON.stringify({
+        data,
+      }),
+    });
+    const status = response.status;
+    reset();
+    statusCode(status);
+    onSuccess(true);
+  };
 
   return (
     <form
