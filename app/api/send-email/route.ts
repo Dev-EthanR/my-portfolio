@@ -33,11 +33,10 @@ export async function POST(request: NextRequest) {
         { error: "Missing fields: Email, Name, Message" },
         { status: 400 },
       );
-
     await resend.emails.send({
       from: process.env.EMAIL_FROM!,
       to: "ethanlegend7@gmail.com",
-      subject: body.fullName,
+      subject: body.data.fullName,
       react: email(body),
     });
     return NextResponse.json({ success: true });

@@ -20,8 +20,7 @@ export default function Email({ data }: Props) {
       <Head />
       <Body>
         <Preview>{data.message}</Preview>
-        <Heading>name: {data.fullName}</Heading>
-        <Text>from: {data.email}</Text>
+        <Heading>from: {data.email}</Heading>
         <Text>message: {data.message}</Text>
       </Body>
     </Html>
