@@ -9,7 +9,7 @@ const Hero = () => {
       </h2>
       <h3 className="mb-3 ">📍 Melbourne, Australia 🇦🇺</h3>
       <p className="text-sm font-light text-gray-300 border-b-primary border-b pb-2">
-        Striving to be the improve each day
+        Striving to improve each day
       </p>
     </header>
   );
