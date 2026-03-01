@@ -3,6 +3,8 @@ import { Project } from "@/app/entities/project";
 import DisableBodyScroll from "@/app/utils/DisableBodyScroll";
 import Image from "next/image";
 import { useState } from "react";
+import { FaChevronRight } from "react-icons/fa";
+import { FaChevronLeft } from "react-icons/fa6";
 
 interface Props {
   images: Project["gallery"];
@@ -56,7 +58,7 @@ const Carousel = ({ images, onClose, imageSelected }: Props) => {
               onClick={prevImage}
             >
               <span className="inline-flex items-center justify-center w-10 h-10 rounded-base bg-gray-700 group-hover:bg-gray-500 rounded-full">
-                <span>L</span>
+                <FaChevronLeft />
               </span>
             </button>
             <button
@@ -65,7 +67,7 @@ const Carousel = ({ images, onClose, imageSelected }: Props) => {
               onClick={nextImage}
             >
               <span className="inline-flex items-center justify-center w-10 h-10 rounded-base bg-gray-700 group-hover:bg-gray-500 rounded-full">
-                <span>R</span>
+                <FaChevronRight />
               </span>
             </button>
           </div>
