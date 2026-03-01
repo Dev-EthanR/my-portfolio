@@ -25,7 +25,7 @@ const FeaturedProjects = () => {
       </div>
       <Link
         href="/projects"
-        className="bg-surface p-4 border-accent border hover:bg-elevated transition-colors duration-200"
+        className="bg-surface p-4 border-accent border hover:bg-accent transition-colors duration-200"
       >
         View All Projects
       </Link>
