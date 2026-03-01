@@ -11,5 +11,7 @@
   { "title": "TailwindCSS", "src": "/badges/tailwindcss.png" },
   { "title": "Prisma", "src": "/badges/prisma.jpg" },
   { "title": "Git", "src": "/badges/git.svg" },
-  { "title": "Vercel", "src": "/badges/vercel.svg" }
+  { "title": "Vercel", "src": "/badges/vercel.svg" },
+  { "title": "C#", "src": "/badges/csharp.avif" },
+  { "title": "Python", "src": "/badges/python.png" }
 ]
