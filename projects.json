@@ -60,28 +60,40 @@
   },
   {
     "id": 3,
-    "title": "BMI Calculator",
-    "slug": "bmi-calculator",
-    "description": "BMI Calculator is a simple and user-friendly web application that lets users calculate their Body Mass Index (BMI) based on their weight and height",
+    "title": "Note Taking App",
+    "slug": "note-taking-app",
+    "description": "Note-Taking Web App is a feature-rich application that allows users to create, organize, and manage notes efficiently with tagging, archiving, and customization options.",
     "techologies": ["HTML", "SASS", "JavaScript"],
     "features": [
-      "Input for height and weight",
-      "Calculates BMI instantly",
-      "hows BMI category and result message",
-      "Metric and Imperial calculations",
-      "Fully responsive design"
+      "Create, read, update, and delete notes",
+      "Archive and unarchive notes",
+      "View all notes and archived notes",
+      "Filter notes by tags",
+      "Search notes by title, tag, and content",
+      "Customizable color themes",
+      "Customizable font themes",
+      "Form validation with user feedback",
+      "Full keyboard navigation support",
+      "Responsive design for all screen sizes",
+      "Hover and focus states for interactive elements"
     ],
-    "futureImprovements": [],
-    "image": "/projects/bmi-calculator/home.png",
+    "futureImprovements": [
+      "Auto-save with debounce",
+      "Note version history and restore",
+      "Forgot Password",
+      "Performance optimizations"
+    ],
+    "image": "/projects/note-taking/home.png",
     "gallery": [
-      "/projects/bmi-calculator/mobile.png",
-      "/projects/bmi-calculator/tablet.png",
-      "/projects/bmi-calculator/page.png",
-      "/projects/bmi-calculator/metric.png",
-      "/projects/bmi-calculator/imperial.png"
+      "/projects/note-taking/create.png",
+      "/projects/note-taking/archived.png",
+      "/projects/note-taking/settings.png",
+      "/projects/note-taking/mobile1.png",
+      "/projects/note-taking/search.png",
+      "/projects/note-taking/auth.png"
     ],
-    "live": "https://bmi-calculator-seven-kappa.vercel.app/",
-    "github": "https://github.com/Dev-EthanR/bmi-calculator/tree/main"
+    "live": "https://note-taking-nine-blond.vercel.app",
+    "github": "https://github.com/Dev-EthanR/note-taking"
   },
   {
     "id": 4,
@@ -131,5 +143,30 @@
     ],
     "live": "https://password-generator-app-pearl.vercel.app/",
     "github": "https://github.com/Dev-EthanR/password-generator-app"
+  },
+  {
+    "id": 6,
+    "title": "BMI Calculator",
+    "slug": "bmi-calculator",
+    "description": "BMI Calculator is a simple and user-friendly web application that lets users calculate their Body Mass Index (BMI) based on their weight and height",
+    "techologies": ["HTML", "SASS", "JavaScript"],
+    "features": [
+      "Input for height and weight",
+      "Calculates BMI instantly",
+      "hows BMI category and result message",
+      "Metric and Imperial calculations",
+      "Fully responsive design"
+    ],
+    "futureImprovements": [],
+    "image": "/projects/bmi-calculator/home.png",
+    "gallery": [
+      "/projects/bmi-calculator/mobile.png",
+      "/projects/bmi-calculator/tablet.png",
+      "/projects/bmi-calculator/page.png",
+      "/projects/bmi-calculator/metric.png",
+      "/projects/bmi-calculator/imperial.png"
+    ],
+    "live": "https://bmi-calculator-seven-kappa.vercel.app/",
+    "github": "https://github.com/Dev-EthanR/bmi-calculator/tree/main"
   }
 ]
