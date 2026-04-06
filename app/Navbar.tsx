@@ -32,7 +32,7 @@ const Navbar = () => {
         <li>
           <Link
             className="border border-accent px-3 py-2 hover:bg-accent font-medium"
-            href={"/Ethan_Rechichi.pdf"}
+            href={"/Ethan_Rechichi.docx.pdf"}
             download
           >
             Resume
