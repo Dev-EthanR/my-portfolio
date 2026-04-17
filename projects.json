@@ -34,29 +34,33 @@
   },
   {
     "id": 2,
-    "title": "Frontend Quiz App",
-    "slug": "frontend-quiz-app",
-    "description": "Frontend Quiz App is an interactive web application that allows users to test their knowledge of frontend development topics including HTML, CSS, JavaScript, and Accessibility.",
-    "techologies": ["HTML", "CSS", "JavaScript"],
+    "title": "Entertainment Web App",
+    "slug": "entertainment-web-app",
+    "description": "lets users discover, search, and explore movies and TV series, showing sections like trending titles, popular content. Users can also save content to their bookmarks",
+    "techologies": [
+      "Next.js",
+      "TypeScript",
+      "TailwindCSS",
+      "Prisma",
+      "Tanstack Query"
+    ],
     "features": [
-      "Multiple-choice questions",
-      "Instant answer selection feedback",
-      "Final score summary screen",
-      "Fully responsive design (mobile, tablet, desktop)"
+      "Discover trending movies and TV series in real time",
+      "Seamlessly browse content with infinite scrolling",
+      "Save and manage bookmarks for your favorite titles",
+      "Optimized for all devices with a fully responsive design",
+      "Optimized search with debounced input to reduce API calls"
     ],
-    "futureImprovements": [
-      "Add a timer for each question",
-      "Add score history"
-    ],
-    "image": "/projects/frontend-quiz/home.png",
+    "futureImprovements": ["Full detail pages (cast, crew, reviews)"],
+    "image": "/projects/entertainment-web-app/home.png",
     "gallery": [
-      "/projects/frontend-quiz/select.png",
-      "/projects/frontend-quiz/correct.png",
-      "/projects/frontend-quiz/incorrect.png",
-      "/projects/frontend-quiz/endscreen.png"
+      "/projects/entertainment-web-app/bookmarks.png",
+      "/projects/entertainment-web-app/search.png",
+      "/projects/entertainment-web-app/mobile.png",
+      "/projects/entertainment-web-app/auth.png"
     ],
-    "live": "https://frontend-quiz-app-jade.vercel.app/",
-    "github": "https://github.com/Dev-EthanR/frontend-quiz-app"
+    "live": "https://entertainment-web-app-silk.vercel.app/",
+    "github": "https://github.com/Dev-EthanR/entertainment-web-app"
   },
   {
     "id": 3,
@@ -67,7 +71,7 @@
       "Next.js",
       "React",
       "TypeScript",
-      "Tailwind CSS",
+      "TailwindCSS",
       "shadcn/ui",
       "Prisma",
       "PostgreSQL"
@@ -177,5 +181,31 @@
     ],
     "live": "https://bmi-calculator-seven-kappa.vercel.app/",
     "github": "https://github.com/Dev-EthanR/bmi-calculator/tree/main"
+  },
+  {
+    "id": 7,
+    "title": "Frontend Quiz App",
+    "slug": "frontend-quiz-app",
+    "description": "Frontend Quiz App is an interactive web application that allows users to test their knowledge of frontend development topics including HTML, CSS, JavaScript, and Accessibility.",
+    "techologies": ["HTML", "CSS", "JavaScript"],
+    "features": [
+      "Multiple-choice questions",
+      "Instant answer selection feedback",
+      "Final score summary screen",
+      "Fully responsive design (mobile, tablet, desktop)"
+    ],
+    "futureImprovements": [
+      "Add a timer for each question",
+      "Add score history"
+    ],
+    "image": "/projects/frontend-quiz/home.png",
+    "gallery": [
+      "/projects/frontend-quiz/select.png",
+      "/projects/frontend-quiz/correct.png",
+      "/projects/frontend-quiz/incorrect.png",
+      "/projects/frontend-quiz/endscreen.png"
+    ],
+    "live": "https://frontend-quiz-app-jade.vercel.app/",
+    "github": "https://github.com/Dev-EthanR/frontend-quiz-app"
   }
 ]
