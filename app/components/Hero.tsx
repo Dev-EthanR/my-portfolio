@@ -1,16 +1,58 @@
+import Link from "next/link";
+import { footerLinks } from "../Footer";
+
 const Hero = () => {
   return (
-    <header className="flex flex-col items-center  max-w-160 mx-auto">
-      <h1 className="text-4xl md:text-5xl font-semibold mb-4">
-        Ethan Rechichi
-      </h1>
-      <h2 className="text-2xl font-light border-b border-white/25 w-fit mb-4 pb-1.5 text-center">
+    <header className="flex flex-col items-start mx-4 relative ">
+      <p className="text-sm font-medium border-l-2 pl-2 border-primary text-primary-bright w-fit mb-4 uppercase tracking-wider">
         Full Stack Developer
-      </h2>
-      <h3 className="mb-3 ">📍 Melbourne, Australia 🇦🇺</h3>
-      <p className="text-sm font-light text-gray-300 border-b-primary border-b pb-2">
-        Striving to improve each day
       </p>
+      <h1 className="text-4xl md:text-5xl font-semibold mb-4">
+        Ethan{" "}
+        <span className="text-primary-bright block text-6xl md:text-9xl">
+          Rechichi
+        </span>
+      </h1>
+      <h3 className="mb-3 text-text-subtext/70 text-sm">
+        📍 Melbourne, Australia 🇦🇺
+      </h3>
+      <p className="text-lg font-light text-[#e0bfb5] max-w-xl">
+        I build things that work, scale, and look good doing it. Focused on
+        precision engineering and architectural clarity.{" "}
+      </p>
+      <div className="absolute top-0 right-[15%] text-primary-bright text-9xl opacity-70 select-none pointer-events-none hidden lg:block">
+        {"{"}
+      </div>
+      <div className="absolute top-40 right-[25%] text-primary-bright text-9xl opacity-70 select-none pointer-events-none hidden lg:block">
+        {"}"}
+      </div>
+      <div className="flex items-center gap-4 mt-6">
+        <Link
+          href="/projects"
+          className="mt-6 px-6 py-3 bg-primary rounded-sm text-white font-medium hover:bg-primary-dark transition-colors"
+        >
+          View Projects
+        </Link>
+        <Link
+          href="/contact"
+          className="mt-6 px-6 py-3 bg-transparent border border-border text-white rounded-sm hover:bg-border transition-colors"
+        >
+          Get in Touch
+        </Link>
+      </div>
+      <div className="flex items-center gap-6 mt-8">
+        {footerLinks.map((link, index) => (
+          <Link
+            key={index}
+            href={link.href}
+            target={link?.target}
+            className="flex items-center gap-2 text-gray-300/50 hover:text-gray-300 uppercase"
+          >
+            {link.icon}
+            {link.label.includes("Email") ? "Email" : link.label}
+          </Link>
+        ))}
+      </div>
     </header>
   );
 };
