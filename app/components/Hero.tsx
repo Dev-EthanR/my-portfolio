@@ -35,9 +35,9 @@ const Hero = () => {
         </Link>
       </div>
       <div className="flex items-center gap-6 mt-10">
-        {footerLinks.map((link, index) => (
+        {footerLinks.map((link) => (
           <Link
-            key={index}
+            key={link.href}
             href={link.href}
             target={link?.target}
             className="flex items-center gap-2 text-gray-300/50 hover:text-gray-300 uppercase"

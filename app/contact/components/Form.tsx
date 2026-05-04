@@ -4,7 +4,6 @@ import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { IoIosSend } from "react-icons/io";
 import FormLabel from "./FormLabel";
-import { body } from "framer-motion/client";
 
 interface Props {
   onSuccess: (toastOpen: boolean) => void;
@@ -44,25 +43,27 @@ const Form = ({ onSuccess, statusCode }: Props) => {
 
   return (
     <form
-      className="w-full max-w-180 mx-auto flex flex-col gap-6"
+      className="w-full max-w-220 mx-auto flex flex-col gap-6 bg-surface p-8 border-border border rounded-sm"
       onSubmit={handleSubmit(onSubmit)}
     >
       <div className="lg:grid grid-cols-2 gap-12 space-y-6 lg:space-y-0">
         <div className="flex flex-col items-center gap-y-3">
           <FormLabel id="fullName" label={errors.fullName} name="Name" />
           <input
-            className="border-white border-2 rounded-full px-4 py-2  w-full"
+            className="border-white/20 border-b  py-2  w-full outline-0"
             type="text"
             autoComplete="name"
+            placeholder="Ethan Rechichi"
             {...register("fullName")}
           />
         </div>
         <div className="flex flex-col items-center gap-y-3">
           <FormLabel id="email" label={errors.email} name="Email" />
           <input
-            className="border-white border-2 rounded-full px-4 py-2  w-full"
+            className="border-white/20 border-b  py-2  w-full outline-0"
             type="email"
             {...register("email")}
+            placeholder="ethan@example.com"
             autoComplete="email"
           />
         </div>
@@ -71,7 +72,8 @@ const Form = ({ onSuccess, statusCode }: Props) => {
         <FormLabel id="message" label={errors.message} name="Message" />
         <textarea
           {...register("message")}
-          className="border-white border-2 rounded-3xl w-full px-4 py-2 h-35 esize-none md:text-lg"
+          className="border-white/20 border-b  w-full  py-2 h-35 size-none md:text-lg outline-0 overflow-auto"
+          placeholder="I'm looking to connect regarding..."
         />
       </div>
       <button

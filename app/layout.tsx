@@ -20,9 +20,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} mx-auto max-w-400`}>
+      <body
+        className={`${inter.className} mx-auto max-w-400 flex flex-col min-h-screen`}
+      >
         <Navbar />
-        <main className="mx-4">{children}</main>
+        <main className="mx-4 flex-1">{children}</main>
         <Footer />
       </body>
     </html>
