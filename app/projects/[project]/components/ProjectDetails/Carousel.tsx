@@ -1,6 +1,6 @@
 "use client";
 import { Project } from "@/app/entities/project";
-import DisableBodyScroll from "@/app/utils/DisableBodyScroll";
+import DisableBodyScroll from "@/app/hooks/DisableBodyScroll";
 import Image from "next/image";
 import { useState } from "react";
 import { FaChevronRight } from "react-icons/fa";
