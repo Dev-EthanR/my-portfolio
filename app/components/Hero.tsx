@@ -20,27 +20,21 @@ const Hero = () => {
         I build things that work, scale, and look good doing it. Focused on
         precision engineering and architectural clarity.{" "}
       </p>
-      <div className="absolute top-0 right-[15%] text-primary-bright text-9xl opacity-70 select-none pointer-events-none hidden lg:block">
-        {"{"}
-      </div>
-      <div className="absolute top-40 right-[25%] text-primary-bright text-9xl opacity-70 select-none pointer-events-none hidden lg:block">
-        {"}"}
-      </div>
-      <div className="flex items-center gap-4 mt-6">
+      <div className="flex items-center gap-4 mt-10">
         <Link
           href="/projects"
-          className="mt-6 px-6 py-3 bg-primary rounded-sm text-white font-medium hover:bg-primary-dark transition-colors"
+          className=" px-6 py-3 bg-primary rounded-sm text-white font-medium hover:bg-primary-dark transition-colors"
         >
           View Projects
         </Link>
         <Link
           href="/contact"
-          className="mt-6 px-6 py-3 bg-transparent border border-border text-white rounded-sm hover:bg-border transition-colors"
+          className="px-6 py-3 bg-transparent border border-border text-white rounded-sm hover:bg-border transition-colors"
         >
           Get in Touch
         </Link>
       </div>
-      <div className="flex items-center gap-6 mt-8">
+      <div className="flex items-center gap-6 mt-10">
         {footerLinks.map((link, index) => (
           <Link
             key={index}
@@ -52,6 +46,12 @@ const Hero = () => {
             {link.label.includes("Email") ? "Email" : link.label}
           </Link>
         ))}
+      </div>
+      <div className="absolute top-0 right-[15%] text-primary-bright text-9xl opacity-70 select-none pointer-events-none hidden lg:block">
+        {"{"}
+      </div>
+      <div className="absolute top-40 right-[25%] text-primary-bright text-9xl opacity-70 select-none pointer-events-none hidden lg:block">
+        {"}"}
       </div>
     </header>
   );
