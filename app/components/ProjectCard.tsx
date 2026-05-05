@@ -41,7 +41,7 @@ const ProjectCard = ({ details, href }: Props) => {
 
           <p className="text-sm text-[#E0BFB5] mb-4">{details.description}</p>
         </div>
-        <div className="flex gap-7" onClick={(e) => e.stopPropagation()}>
+        <div className="flex gap-4" onClick={(e) => e.stopPropagation()}>
           <Link
             href={details.live}
             target="_blank"
