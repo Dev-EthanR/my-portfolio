@@ -4,7 +4,8 @@
     "title": "Job Application Tracker",
     "slug": "job-application-tracker",
     "description": "A responsive, accessible job application tracking web app that helps users manage applications across multiple stages using a Kanban-style workflow.",
-    "techologies": [
+    "displayTechnologies": ["Next.js", "React", "TypeScript", "PostgresSQL"],
+    "technologies": [
       "Next.js",
       "React",
       "TailwindCSS",
@@ -36,8 +37,9 @@
     "id": 2,
     "title": "Entertainment Web App",
     "slug": "entertainment-web-app",
-    "description": "lets users discover, search, and explore movies and TV series, showing sections like trending titles, popular content. Users can also save content to their bookmarks",
-    "techologies": [
+    "description": "Lets users discover, search, and explore movies and TV series, showing sections like trending titles, popular content. Users can also save content to their bookmarks",
+    "displayTechnologies": ["Next.js", "React", "TypeScript", "PostgresSQL"],
+    "technologies": [
       "Next.js",
       "TypeScript",
       "TailwindCSS",
@@ -68,7 +70,8 @@
     "title": "Note Taking App",
     "slug": "note-taking-app",
     "description": "Note-Taking Web App is a feature-rich application that allows users to create, organize, and manage notes efficiently with tagging, archiving, and customization options.",
-    "techologies": [
+    "displayTechnologies": ["Next.js", "React", "TypeScript"],
+    "technologies": [
       "Next.js",
       "React",
       "TypeScript",
@@ -114,7 +117,8 @@
     "title": "Movie Watchlist",
     "slug": "movie-watchlist",
     "description": "Movie Watchlist is a web application that lets users search for movies and TV shows, then add them to a personal watchlist so you can track what you want to watch and what you’ve already seen.",
-    "techologies": ["JavaScript", "React", "TailwindCSS", "API"],
+    "displayTechnologies": ["JavaScript", "React"],
+    "technologies": ["JavaScript", "React", "TailwindCSS", "API"],
     "features": [
       "Search for movies and TV shows by title",
       "Add items to your watchlist",
@@ -141,7 +145,8 @@
     "title": "Password Generator",
     "slug": "password-generator",
     "description": "Password Generator is a simple and practical web application that helps users create strong, secure passwords with ease.",
-    "techologies": ["HTML", "CSS", "JavaScript"],
+    "displayTechnologies": ["JavaScript"],
+    "technologies": ["HTML", "CSS", "JavaScript"],
     "features": [
       "Generate random secure passwords",
       "Adjustable password length",
@@ -163,7 +168,8 @@
     "title": "BMI Calculator",
     "slug": "bmi-calculator",
     "description": "BMI Calculator is a simple and user-friendly web application that lets users calculate their Body Mass Index (BMI) based on their weight and height",
-    "techologies": ["HTML", "SASS", "JavaScript"],
+    "displayTechnologies": ["JavaScript"],
+    "technologies": ["HTML", "SASS", "JavaScript"],
     "features": [
       "Input for height and weight",
       "Calculates BMI instantly",
@@ -188,7 +194,8 @@
     "title": "Frontend Quiz App",
     "slug": "frontend-quiz-app",
     "description": "Frontend Quiz App is an interactive web application that allows users to test their knowledge of frontend development topics including HTML, CSS, JavaScript, and Accessibility.",
-    "techologies": ["HTML", "CSS", "JavaScript"],
+    "displayTechnologies": ["JavaScript"],
+    "technologies": ["HTML", "CSS", "JavaScript"],
     "features": [
       "Multiple-choice questions",
       "Instant answer selection feedback",

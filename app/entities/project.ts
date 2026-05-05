@@ -3,7 +3,8 @@ export interface Project {
   title: string;
   slug: string;
   description: string;
-  techologies: string[];
+  displayTechnologies: string[];
+  technologies: string[];
   features: string[];
   futureImprovements: string[];
   image: string;
