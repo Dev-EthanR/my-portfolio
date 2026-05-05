@@ -17,7 +17,7 @@ const ProjectCard = ({ details, href }: Props) => {
   return (
     <button
       onClick={() => router.push(href)}
-      className="border-b-primary-dark border-primary-dark border hover:scale-105 transition-transform duration-300 cursor-pointer lg:w-80 xl:w-95 2xl:w-112.5 flex flex-col h-full"
+      className="border-b-primary-dark border-primary-dark border hover:scale-105 transition-transform duration-300 cursor-pointer lg:w-80 xl:w-95 2xl:w-112.5 flex flex-col h-full text-left"
     >
       <Image
         className="w-full h-60 object-cover lg:h-40 xl:h-50 2xl:h-60 select-none"
