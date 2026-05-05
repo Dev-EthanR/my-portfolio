@@ -55,7 +55,7 @@ const Navbar = () => {
       <div className="absolute top-18.5 left-0 w-full border-b border-border z-0" />
       <div
         className={clsx(
-          "flex-1 z-20 static items-center pt-1 md:pt-0",
+          "flex-1 z-20 static items-center pt-1 md:pt-0 select-none",
           open ? "w-10 h-10" : "w-10 h-7",
         )}
       >

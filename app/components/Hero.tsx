@@ -9,7 +9,7 @@ const Hero = () => {
       </p>
       <h1 className="text-4xl md:text-5xl font-semibold mb-4">
         Ethan{" "}
-        <span className="text-primary-bright block text-6xl md:text-9xl">
+        <span className="text-primary-bright block text-6xl md:text-6xl">
           Rechichi
         </span>
       </h1>
@@ -46,12 +46,6 @@ const Hero = () => {
             {link.label.includes("Email") ? "Email" : link.label}
           </Link>
         ))}
-      </div>
-      <div className="absolute top-0 right-[15%] text-primary-bright text-9xl opacity-70 select-none pointer-events-none hidden lg:block">
-        {"{"}
-      </div>
-      <div className="absolute top-40 right-[25%] text-primary-bright text-9xl opacity-70 select-none pointer-events-none hidden lg:block">
-        {"}"}
       </div>
     </header>
   );
