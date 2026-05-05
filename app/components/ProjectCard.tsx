@@ -15,7 +15,7 @@ const ProjectCard = ({ details, href }: Props) => {
   const router = useRouter();
 
   return (
-    <div
+    <button
       onClick={() => router.push(href)}
       className="border-b-primary-dark border-primary-dark border hover:scale-105 transition-transform duration-300 cursor-pointer lg:w-80 xl:w-95 2xl:w-112.5 flex flex-col h-full"
     >
@@ -60,7 +60,7 @@ const ProjectCard = ({ details, href }: Props) => {
           </Link>
         </div>
       </div>
-    </div>
+    </button>
   );
 };
 
