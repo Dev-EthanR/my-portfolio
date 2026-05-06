@@ -1,10 +1,10 @@
 "use client";
 
+import Badge from "@/app/projects/[project]/components/Badge";
 import Image from "next/image";
-import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { Project } from "../entities/project";
-import Badge from "@/app/projects/[project]/components/Badge";
+import Button from "./Button";
 
 interface Props {
   details: Project;
@@ -42,22 +42,23 @@ const ProjectCard = ({ details, href }: Props) => {
           <p className="text-sm text-[#E0BFB5] mb-4">{details.description}</p>
         </div>
         <div className="flex gap-4" onClick={(e) => e.stopPropagation()}>
-          <Link
+          <Button
+            variant="primary"
             href={details.live}
             target="_blank"
-            className="bg-primary px-4 py-1.5 text-black font-semibold hover:bg-primary-glow"
+            className="font-semibold "
           >
             🔗 Live
-          </Link>
-
-          <Link
+          </Button>
+          <Button
+            variant="outline"
             href={details.github}
             target="_blank"
-            className="px-4 py-1.5 text-text-primary font-light flex items-center gap-2 border-primary-dark border hover:bg-primary-glow transition-colors"
+            className="font-light flex items-center gap-1"
           >
             <span>{"<>"}</span>
             Source Code
-          </Link>
+          </Button>
         </div>
       </div>
     </button>

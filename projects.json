@@ -70,7 +70,7 @@
     "title": "Note Taking App",
     "slug": "note-taking-app",
     "description": "Note-Taking Web App is a feature-rich application that allows users to create, organize, and manage notes efficiently with tagging, archiving, and customization options.",
-    "displayTechnologies": ["Next.js", "React", "TypeScript"],
+    "displayTechnologies": ["Next.js", "React", "TypeScript", "PostgresSQL"],
     "technologies": [
       "Next.js",
       "React",

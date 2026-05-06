@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { footerLinks } from "../Footer";
+import Button from "./Button";
 
 const Hero = () => {
   return (
@@ -21,18 +22,22 @@ const Hero = () => {
         precision engineering and architectural clarity.{" "}
       </p>
       <div className="flex items-center gap-4 mt-10">
-        <Link
+        <Button
+          variant="primary"
           href="/projects"
-          className=" px-6 py-3 bg-primary rounded-sm text-white font-medium hover:bg-primary-dark transition-colors"
+          className="font-semibold rounded-sm "
+          size="large"
         >
           View Projects
-        </Link>
-        <Link
+        </Button>
+        <Button
+          variant="outline"
           href="/contact"
-          className="px-6 py-3 bg-transparent border border-border text-white rounded-sm hover:bg-border transition-colors"
+          className="font-light rounded-sm"
+          size="large"
         >
           Get in Touch
-        </Link>
+        </Button>
       </div>
       <div className="flex items-center gap-6 mt-10">
         {footerLinks.map((link) => (

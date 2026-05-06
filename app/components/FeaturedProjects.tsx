@@ -1,6 +1,6 @@
-import ProjectCard from "./ProjectCard";
-import Link from "next/link";
 import jsonData from "@/projects.json";
+import Button from "./Button";
+import ProjectCard from "./ProjectCard";
 
 const FeaturedProjects = () => {
   return (
@@ -23,12 +23,15 @@ const FeaturedProjects = () => {
           </span>
         ))}
       </div>
-      <Link
+
+      <Button
+        variant="outline"
         href="/projects"
-        className="bg-surface p-4 border-accent border hover:bg-accent transition-colors duration-200"
+        className="font-light  rounded-sm"
+        size="large"
       >
         View All Projects
-      </Link>
+      </Button>
     </div>
   );
 };
