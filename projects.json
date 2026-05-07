@@ -1,6 +1,38 @@
 [
   {
     "id": 1,
+    "title": "Entertainment Web App",
+    "slug": "entertainment-web-app",
+    "description": "Lets users discover, search, and explore movies and TV series, showing sections like trending titles, popular content. Users can also save content to their bookmarks",
+    "displayTechnologies": ["Next.js", "React", "TypeScript", "PostgresSQL"],
+    "technologies": [
+      "Next.js",
+      "TypeScript",
+      "TailwindCSS",
+      "Prisma",
+      "PostgreSQL",
+      "Tanstack Query"
+    ],
+    "features": [
+      "Discover trending movies and TV series in real time",
+      "Seamlessly browse content with infinite scrolling",
+      "Save and manage bookmarks for your favorite titles",
+      "Optimized for all devices with a fully responsive design",
+      "Optimized search with debounced input to reduce API calls"
+    ],
+    "futureImprovements": ["Full detail pages (cast, crew, reviews)"],
+    "image": "/projects/entertainment-web-app/home.png",
+    "gallery": [
+      "/projects/entertainment-web-app/bookmarks.png",
+      "/projects/entertainment-web-app/search.png",
+      "/projects/entertainment-web-app/mobile.png",
+      "/projects/entertainment-web-app/auth.png"
+    ],
+    "live": "https://entertainment-web-app-silk.vercel.app/",
+    "github": "https://github.com/Dev-EthanR/entertainment-web-app"
+  },
+  {
+    "id": 2,
     "title": "Job Application Tracker",
     "slug": "job-application-tracker",
     "description": "A responsive, accessible job application tracking web app that helps users manage applications across multiple stages using a Kanban-style workflow.",
@@ -32,38 +64,6 @@
     ],
     "live": "https://job-tracker-fullstack-two.vercel.app",
     "github": "https://github.com/Dev-EthanR/job-tracker-fullstack"
-  },
-  {
-    "id": 2,
-    "title": "Entertainment Web App",
-    "slug": "entertainment-web-app",
-    "description": "Lets users discover, search, and explore movies and TV series, showing sections like trending titles, popular content. Users can also save content to their bookmarks",
-    "displayTechnologies": ["Next.js", "React", "TypeScript", "PostgresSQL"],
-    "technologies": [
-      "Next.js",
-      "TypeScript",
-      "TailwindCSS",
-      "Prisma",
-      "PostgreSQL",
-      "Tanstack Query"
-    ],
-    "features": [
-      "Discover trending movies and TV series in real time",
-      "Seamlessly browse content with infinite scrolling",
-      "Save and manage bookmarks for your favorite titles",
-      "Optimized for all devices with a fully responsive design",
-      "Optimized search with debounced input to reduce API calls"
-    ],
-    "futureImprovements": ["Full detail pages (cast, crew, reviews)"],
-    "image": "/projects/entertainment-web-app/home.png",
-    "gallery": [
-      "/projects/entertainment-web-app/bookmarks.png",
-      "/projects/entertainment-web-app/search.png",
-      "/projects/entertainment-web-app/mobile.png",
-      "/projects/entertainment-web-app/auth.png"
-    ],
-    "live": "https://entertainment-web-app-silk.vercel.app/",
-    "github": "https://github.com/Dev-EthanR/entertainment-web-app"
   },
   {
     "id": 3,

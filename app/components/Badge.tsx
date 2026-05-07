@@ -8,17 +8,17 @@ interface Props {
 const Badge = ({ imageSrc, title }: Props) => {
   return (
     <div>
-      <div className="border-border border rounded-3xl p-4 aspect-square flex items-center justify-center mb-2">
+      <div className="border-border border rounded-3xl p-4 flex items-center justify-center mb-2 gap-2">
         <Image
-          className="w-10 md:w-12.5"
+          className="w-3 md:w-5"
           src={imageSrc}
           alt={title}
           width={50}
           height={50}
         />
-      </div>
-      <div className=" text-gray-300 text-xs font-medium mt-2 text-center uppercase">
-        {title}
+        <div className=" text-gray-300 text-[10px] md:text-xs font-medium text-center uppercase">
+          {title}
+        </div>
       </div>
     </div>
   );
