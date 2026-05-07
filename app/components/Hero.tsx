@@ -25,7 +25,7 @@ const Hero = () => {
         <Button
           variant="primary"
           href="/projects"
-          className="font-semibold rounded-sm "
+          className="font-semibold rounded-sm text-sm md:text-base"
           size="large"
         >
           View Projects
@@ -33,7 +33,7 @@ const Hero = () => {
         <Button
           variant="outline"
           href="/contact"
-          className="font-light rounded-sm"
+          className="font-light rounded-sm text-sm md:text-base"
           size="large"
         >
           Get in Touch

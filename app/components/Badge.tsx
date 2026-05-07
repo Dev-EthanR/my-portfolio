@@ -8,7 +8,7 @@ interface Props {
 const Badge = ({ imageSrc, title }: Props) => {
   return (
     <div>
-      <div className="border-border border rounded-3xl p-4 aspect-square flex items-center justify-center mb-4">
+      <div className="border-border border rounded-3xl p-4 aspect-square flex items-center justify-center mb-2">
         <Image
           className="w-10 md:w-12.5"
           src={imageSrc}
