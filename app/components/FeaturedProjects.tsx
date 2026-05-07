@@ -1,23 +1,22 @@
+"use client";
 import jsonData from "@/projects.json";
 import Button from "./Button";
 import ProjectCard from "./ProjectCard";
+import { useIsMobile } from "../hooks/useIsMobile";
 
 const FeaturedProjects = () => {
+  const isMobile = useIsMobile(1024);
   return (
     <div className="flex flex-col items-center">
       <h2 className="text-2xl font-bold mb-2">Featured Projects</h2>
       <p className="text-sm font-light text-gray-300 mb-4">
         Some of my recent work:
       </p>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-fit gap-6 mb-10 ">
-        {jsonData.slice(0, 3).map((data, index) => (
+      <div className="grid grid-cols-1 md:grid-cols-2 w-fit gap-6 mb-10 ">
+        {jsonData.slice(isMobile ? 0 : 1, 3).map((data, index) => (
           <span
             key={data.id}
-            className={
-              index === 2
-                ? "md:col-span-2 place-items-center lg:col-span-1"
-                : ""
-            }
+            className={index === 2 ? "md:col-span-2 max-w-md mx-auto" : ""}
           >
             <ProjectCard details={data} href={`/projects/${data.slug}`} />
           </span>
