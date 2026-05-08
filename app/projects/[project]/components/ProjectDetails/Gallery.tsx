@@ -1,45 +1,51 @@
 "use client";
-import Image from "next/image";
 import { Project } from "@/app/entities/project";
+import Image from "next/image";
 import { useState } from "react";
-import Carousel from "./Carousel";
 
 interface Props {
   data: Project;
 }
 const Gallery = ({ data }: Props) => {
-  const [modalOpen, setModalOpen] = useState(false);
-  const [currentImage, setCurrentImage] = useState<number>(0);
-
-  const handleImageClick = (index: number) => {
-    setModalOpen(true);
-    setCurrentImage(index);
-  };
-
+  const layouts = [
+    "md:col-span-2 md:row-span-2", // hero desktop
+    "md:col-span-1 md:row-span-1", // small landscape
+    "md:col-span-1 md:row-span-3", // small landscape
+    "md:col-span-1 md:row-span-2", // mobile portrait
+    "md:col-span-1 md:row-span-1", // auth screen
+  ];
   return (
     <div>
-      <h3 className="text-xl font-medium mb-2">Gallery:</h3>
-      <div className="grid grid-cols-2 gap-2">
+      <h3 className="text-xl font-medium mb-4">Gallery</h3>
+
+      <div className="grid grid-cols-1 md:grid-cols-4 auto-rows-[180px] gap-4">
         {data.gallery.map((image, index) => (
-          <button onClick={() => handleImageClick(index)} key={image}>
+          <div
+            key={image.src}
+            className={`
+        relative
+        overflow-hidden
+        rounded-2xl
+        bg-zinc-900
+        group
+        ${layouts[index % layouts.length]}
+      `}
+          >
             <Image
-              className="size-35 md:size-50 object-cover cursor-pointer"
-              src={image}
-              width={500}
-              height={500}
-              alt=""
+              src={image.src}
+              alt={image.alt}
+              fill
+              sizes="(max-width:768px) 100vw, 50vw"
+              className="
+          object-cover
+          transition-all
+          duration-500
+          group-hover:scale-105
+        "
             />
-          </button>
+          </div>
         ))}
       </div>
-
-      {modalOpen && (
-        <Carousel
-          images={data.gallery}
-          onClose={() => setModalOpen(false)}
-          imageSelected={currentImage}
-        />
-      )}
     </div>
   );
 };

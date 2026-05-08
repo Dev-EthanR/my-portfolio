@@ -7,14 +7,11 @@ interface Props {
 
 const Technologies = ({ data }: Props) => {
   return (
-    <>
-      <h3 className="text-left text-xl font-medium">Tech Stack:</h3>
-      <div className="flex gap-2 flex-wrap mb-4">
-        {data.technologies.map((tech) => (
-          <Badge key={tech} name={tech} />
-        ))}
-      </div>
-    </>
+    <div className="flex gap-2 flex-wrap mb-4">
+      {data.technologies.map((tech) => (
+        <Badge key={tech} name={tech} />
+      ))}
+    </div>
   );
 };
 

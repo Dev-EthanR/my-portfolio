@@ -1,29 +1,42 @@
-import Link from "next/link";
-import Image from "next/image";
+"use client";
+import Button from "@/app/components/Button";
 import { Project } from "@/app/entities/project";
+import { useIsMobile } from "@/app/hooks/useIsMobile";
+import Image from "next/image";
 
 interface Props {
   data: Project;
 }
 
 const Links = ({ data }: Props) => {
+  const isMobile = useIsMobile(1024);
   return (
     <div className="flex gap-7">
-      <Link
+      <Button
         href={data.live}
         target="_blank"
-        className="bg-primary px-4 py-1.5 "
+        variant="primary"
+        className="text-black"
+        size={isMobile ? "extraSmall" : "large"}
       >
         🔗 Live Demo
-      </Link>
-      <Link
+      </Button>
+      <Button
         href={data.github}
         target="_blank"
-        className="bg-primary px-4 py-1.5 flex items-center gap-2"
+        className="flex items-center gap-2"
+        variant="outline"
+        size={isMobile ? "extraSmall" : "large"}
       >
-        <Image src="/logos/github.png" alt="Github" width={25} height={25} />
+        <Image
+          src="/logos/github.png"
+          alt="Github"
+          width={25}
+          height={25}
+          className="invert"
+        />
         Source Code
-      </Link>
+      </Button>
     </div>
   );
 };

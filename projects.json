@@ -3,40 +3,79 @@
     "id": 1,
     "title": "Entertainment Web App",
     "slug": "entertainment-web-app",
-    "description": "Lets users discover, search, and explore movies and TV series, showing sections like trending titles, popular content. Users can also save content to their bookmarks",
-    "displayTechnologies": ["Next.js", "React", "TypeScript", "PostgresSQL"],
+    "description": "Entertainment Web App is a full-stack application that allows users to discover, search, and explore trending movies and TV series in real time. The platform features responsive layouts, infinite scrolling for seamless browsing, and bookmarking functionality so users can save their favorite content. Optimized search with debounced input improves performance while reducing unnecessary API calls.",
+    "concept": "Lets users discover, search, and explore movies and TV series, showing sections like trending titles and popular content. Users can also save content to their bookmarks.",
+    "displayTechnologies": ["Next.js", "React", "TypeScript", "PostgreSQL"],
     "technologies": [
       "Next.js",
+      "React",
       "TypeScript",
       "TailwindCSS",
       "Prisma",
       "PostgreSQL",
-      "Tanstack Query"
+      "TanStack Query"
     ],
     "features": [
-      "Discover trending movies and TV series in real time",
-      "Seamlessly browse content with infinite scrolling",
-      "Save and manage bookmarks for your favorite titles",
-      "Optimized for all devices with a fully responsive design",
-      "Optimized search with debounced input to reduce API calls"
+      {
+        "title": "Real-Time Trending Discovery",
+        "description": "Discover trending movies and TV series in real time."
+      },
+      {
+        "title": "Infinite Scrolling Experience",
+        "description": "Seamlessly browse content with infinite scrolling."
+      },
+      {
+        "title": "Bookmark Management",
+        "description": "Save and manage bookmarks for your favorite titles."
+      },
+      {
+        "title": "Fully Responsive Design",
+        "description": "Optimized for all devices with a fully responsive design."
+      },
+      {
+        "title": "Debounced Smart Search",
+        "description": "Optimized search with debounced input to reduce API calls."
+      }
     ],
-    "futureImprovements": ["Full detail pages (cast, crew, reviews)"],
-    "image": "/projects/entertainment-web-app/home.png",
+    "futureImprovements": [
+      {
+        "title": "Detailed Content Pages",
+        "description": "Full detail pages including cast, crew, ratings, trailers, and reviews."
+      }
+    ],
+    "thumbnail": {
+      "src": "/projects/entertainment-web-app/home.png",
+      "alt": "Entertainment Web App homepage showing trending movies and TV series"
+    },
     "gallery": [
-      "/projects/entertainment-web-app/bookmarks.png",
-      "/projects/entertainment-web-app/search.png",
-      "/projects/entertainment-web-app/mobile.png",
-      "/projects/entertainment-web-app/auth.png"
+      {
+        "src": "/projects/entertainment-web-app/bookmarks.png",
+        "alt": "Entertainment Web App bookmarks page"
+      },
+      {
+        "src": "/projects/entertainment-web-app/search.png",
+        "alt": "Entertainment Web App search results interface"
+      },
+      {
+        "src": "/projects/entertainment-web-app/mobile.png",
+        "alt": "Entertainment Web App mobile responsive layout"
+      },
+      {
+        "src": "/projects/entertainment-web-app/auth.png",
+        "alt": "Entertainment Web App authentication screen"
+      }
     ],
     "live": "https://entertainment-web-app-silk.vercel.app/",
     "github": "https://github.com/Dev-EthanR/entertainment-web-app"
   },
+
   {
     "id": 2,
     "title": "Job Application Tracker",
     "slug": "job-application-tracker",
-    "description": "A responsive, accessible job application tracking web app that helps users manage applications across multiple stages using a Kanban-style workflow.",
-    "displayTechnologies": ["Next.js", "React", "TypeScript", "PostgresSQL"],
+    "description": "Job Application Tracker is a full-stack productivity app designed to help users manage their job search workflow. Users can move applications between stages using drag-and-drop interactions, visualize progress through analytics, and manage entries through intuitive modal forms.",
+    "concept": "Helps users manage job applications using a Kanban-style workflow with drag-and-drop functionality and analytics.",
+    "displayTechnologies": ["Next.js", "React", "TypeScript", "PostgreSQL"],
     "technologies": [
       "Next.js",
       "React",
@@ -46,31 +85,62 @@
       "PostgreSQL"
     ],
     "features": [
-      "Four application stages (Applied, Interview, Offer, Rejected)",
-      "Drag & drop cards between columns",
-      "Modal-based form",
-      "Visual breakdown of applications with graph"
+      {
+        "title": "Kanban Workflow",
+        "description": "Track applications across Applied, Interview, Offer, and Rejected stages."
+      },
+      {
+        "title": "Drag and Drop Interactions",
+        "description": "Move job applications seamlessly between workflow columns."
+      },
+      {
+        "title": "Application Analytics",
+        "description": "Visualize application progress using charts and graphs."
+      }
     ],
     "futureImprovements": [
-      "Add credentials authentication",
-      "Introduce caching"
+      {
+        "title": "User Authentication",
+        "description": "Add secure credentials-based authentication."
+      },
+      {
+        "title": "Introduce caching",
+        "description": "Implement caching to improve performance and reduce API calls."
+      }
     ],
-    "image": "/projects/job-tracker/desktop.png",
+    "thumbnail": {
+      "src": "/projects/job-tracker/desktop.png",
+      "alt": "Job Application Tracker desktop Kanban board"
+    },
     "gallery": [
-      "/projects/job-tracker/analytics.png",
-      "/projects/job-tracker/modal.png",
-      "/projects/job-tracker/application-details.png",
-      "/projects/job-tracker/mobile.png"
+      {
+        "src": "/projects/job-tracker/analytics.png",
+        "alt": "Job Application Tracker analytics dashboard"
+      },
+      {
+        "src": "/projects/job-tracker/modal.png",
+        "alt": "Job Application Tracker modal form interface"
+      },
+      {
+        "src": "/projects/job-tracker/application-details.png",
+        "alt": "Job Application Tracker application details page"
+      },
+      {
+        "src": "/projects/job-tracker/mobile.png",
+        "alt": "Job Application Tracker mobile responsive design"
+      }
     ],
     "live": "https://job-tracker-fullstack-two.vercel.app",
     "github": "https://github.com/Dev-EthanR/job-tracker-fullstack"
   },
+
   {
     "id": 3,
     "title": "Note Taking App",
     "slug": "note-taking-app",
-    "description": "Note-Taking Web App is a feature-rich application that allows users to create, organize, and manage notes efficiently with tagging, archiving, and customization options.",
-    "displayTechnologies": ["Next.js", "React", "TypeScript", "PostgresSQL"],
+    "description": "Note Taking App is a full-stack productivity platform that enables users to create, organize, and manage notes efficiently. The application includes tagging, archiving, customizable themes, advanced search, and accessibility-focused interactions.",
+    "concept": "Allows users to create, organize, archive, search, and customize notes with a focus on accessibility and productivity.",
+    "displayTechnologies": ["Next.js", "React", "TypeScript", "PostgreSQL"],
     "technologies": [
       "Next.js",
       "React",
@@ -81,33 +151,70 @@
       "PostgreSQL"
     ],
     "features": [
-      "Create, read, update, and delete notes",
-      "Archive and unarchive notes",
-      "View all notes and archived notes",
-      "Filter notes by tags",
-      "Search notes by title, tag, and content",
-      "Customizable color themes",
-      "Customizable font themes",
-      "Form validation with user feedback",
-      "Full keyboard navigation support",
-      "Responsive design for all screen sizes",
-      "Hover and focus states for interactive elements"
+      {
+        "title": "Complete Note Management",
+        "description": "Create, update, archive, and delete notes with ease."
+      },
+      {
+        "title": "Advanced Search and Filtering",
+        "description": "Search notes by title, content, and tags."
+      },
+      {
+        "title": "Customizable Themes",
+        "description": "Personalize the app with custom colors and fonts."
+      }
     ],
     "futureImprovements": [
-      "Auto-save with debounce",
-      "Note version history and restore",
-      "Forgot Password",
-      "WYSIWYG editor",
-      "Performance optimizations"
+      {
+        "title": "Version History",
+        "description": "Restore previous note versions when needed."
+      },
+      {
+        "title": "Auto-save with debounce",
+        "description": "Implement auto-saving of notes with debounce to improve performance."
+      },
+      {
+        "title": "Forgot Password",
+        "description": "Allow users to reset their passwords if they forget them."
+      },
+      {
+        "title": "WYSIWYG editor",
+        "description": "Allow users to create rich text content for their notes."
+      },
+      {
+        "title": "Performance optimizations",
+        "description": "Improve the app's performance under various usage scenarios."
+      }
     ],
-    "image": "/projects/note-taking/home.png",
+    "thumbnail": {
+      "src": "/projects/note-taking/home.png",
+      "alt": "Note Taking App homepage with notes dashboard"
+    },
     "gallery": [
-      "/projects/note-taking/create.png",
-      "/projects/note-taking/archived.png",
-      "/projects/note-taking/settings.png",
-      "/projects/note-taking/mobile1.png",
-      "/projects/note-taking/search.png",
-      "/projects/note-taking/auth.png"
+      {
+        "src": "/projects/note-taking/create.png",
+        "alt": "Note Taking App create note interface"
+      },
+      {
+        "src": "/projects/note-taking/archived.png",
+        "alt": "Note Taking App archived notes page"
+      },
+      {
+        "src": "/projects/note-taking/settings.png",
+        "alt": "Note Taking App settings and themes page"
+      },
+      {
+        "src": "/projects/note-taking/mobile1.png",
+        "alt": "Note Taking App mobile responsive layout"
+      },
+      {
+        "src": "/projects/note-taking/search.png",
+        "alt": "Note Taking App search functionality"
+      },
+      {
+        "src": "/projects/note-taking/auth.png",
+        "alt": "Note Taking App authentication screen"
+      }
     ],
     "live": "https://note-taking-nine-blond.vercel.app",
     "github": "https://github.com/Dev-EthanR/note-taking"
@@ -116,102 +223,223 @@
     "id": 4,
     "title": "Movie Watchlist",
     "slug": "movie-watchlist",
-    "description": "Movie Watchlist is a web application that lets users search for movies and TV shows, then add them to a personal watchlist so you can track what you want to watch and what you’ve already seen.",
+    "description": "Movie Watchlist is a React-based application that allows users to search for movies and TV shows, then save them into a personal watchlist. The app provides persistent local storage support, responsive layouts, and an intuitive browsing experience for tracking entertainment content users want to watch later.",
+    "concept": "Allows users to search for movies and TV series and save them into a personalized watchlist.",
     "displayTechnologies": ["JavaScript", "React"],
     "technologies": ["JavaScript", "React", "TailwindCSS", "API"],
     "features": [
-      "Search for movies and TV shows by title",
-      "Add items to your watchlist",
-      "View your watchlist with posters/titles",
-      "Remove items you no longer want to track",
-      "Responsive UI",
-      "Local storage support so your list persists in the browser"
+      {
+        "title": "Movie and TV Search",
+        "description": "Search entertainment content by title."
+      },
+      {
+        "title": "Personal Watchlist",
+        "description": "Save movies and TV series into a custom watchlist."
+      },
+      {
+        "title": "Persistent Storage",
+        "description": "Keep watchlist data saved using local storage."
+      },
+      {
+        "title": "Responsive Design",
+        "description": "Optimized layouts across desktop and mobile devices."
+      }
     ],
     "futureImprovements": [
-      "Detailed movie information",
-      "Filter/sort watchlist (e.g., genre, year, rating)"
+      {
+        "title": "Detailed Movie Pages",
+        "description": "Display additional information including ratings and overviews."
+      },
+      {
+        "title": "Filtering and Sorting",
+        "description": "Allow sorting by genre, year, and ratings."
+      }
     ],
-    "image": "/projects/movie-watchlist/homep.png",
+    "thumbnail": {
+      "src": "/projects/movie-watchlist/homep.png",
+      "alt": "Movie Watchlist homepage interface"
+    },
     "gallery": [
-      "/projects/movie-watchlist/mobile.png",
-      "/projects/movie-watchlist/search.png",
-      "/projects/movie-watchlist/watchlist.png"
+      {
+        "src": "/projects/movie-watchlist/mobile.png",
+        "alt": "Movie Watchlist mobile responsive layout"
+      },
+      {
+        "src": "/projects/movie-watchlist/search.png",
+        "alt": "Movie Watchlist search results page"
+      },
+      {
+        "src": "/projects/movie-watchlist/watchlist.png",
+        "alt": "Movie Watchlist saved movies page"
+      }
     ],
     "live": "https://movie-watchlist-plum-pi.vercel.app/",
     "github": "https://github.com/Dev-EthanR/Movie-Watchlist/tree/main"
   },
+
   {
     "id": 5,
     "title": "Password Generator",
     "slug": "password-generator",
-    "description": "Password Generator is a simple and practical web application that helps users create strong, secure passwords with ease.",
+    "description": "Password Generator is a simple web application focused on helping users create secure passwords quickly and efficiently. Users can customize password length, evaluate password strength, and copy generated passwords directly to the clipboard with a single click.",
+    "concept": "Generates strong and secure passwords with customizable settings and password strength feedback.",
     "displayTechnologies": ["JavaScript"],
     "technologies": ["HTML", "CSS", "JavaScript"],
     "features": [
-      "Generate random secure passwords",
-      "Adjustable password length",
-      "Copy to clipboard with one click",
-      "Password strength meter"
+      {
+        "title": "Secure Password Generation",
+        "description": "Generate randomized secure passwords instantly."
+      },
+      {
+        "title": "Adjustable Password Length",
+        "description": "Customize password length based on user preferences."
+      },
+      {
+        "title": "Clipboard Support",
+        "description": "Copy generated passwords with one click."
+      },
+      {
+        "title": "Password Strength Indicator",
+        "description": "Display password strength feedback visually."
+      }
     ],
     "futureImprovements": [],
-    "image": "/projects/password-generator/home.png",
+    "thumbnail": {
+      "src": "/projects/password-generator/home.png",
+      "alt": "Password Generator homepage with generated password"
+    },
     "gallery": [
-      "/projects/password-generator/generate.png",
-      "/projects/password-generator/copy.png",
-      "/projects/password-generator/weak.png"
+      {
+        "src": "/projects/password-generator/generate.png",
+        "alt": "Password Generator generate password feature"
+      },
+      {
+        "src": "/projects/password-generator/copy.png",
+        "alt": "Password Generator copy to clipboard functionality"
+      },
+      {
+        "src": "/projects/password-generator/weak.png",
+        "alt": "Password Generator weak password strength example"
+      }
     ],
     "live": "https://password-generator-app-pearl.vercel.app/",
     "github": "https://github.com/Dev-EthanR/password-generator-app"
   },
+
   {
     "id": 6,
     "title": "BMI Calculator",
     "slug": "bmi-calculator",
-    "description": "BMI Calculator is a simple and user-friendly web application that lets users calculate their Body Mass Index (BMI) based on their weight and height",
+    "description": "BMI Calculator is a clean and user-friendly application that helps users calculate their Body Mass Index based on height and weight inputs. The application supports both metric and imperial systems, provides instant feedback, and displays BMI categories with corresponding health messages.",
+    "concept": "Allows users to calculate BMI instantly using metric or imperial measurement systems.",
     "displayTechnologies": ["JavaScript"],
     "technologies": ["HTML", "SASS", "JavaScript"],
     "features": [
-      "Input for height and weight",
-      "Calculates BMI instantly",
-      "hows BMI category and result message",
-      "Metric and Imperial calculations",
-      "Fully responsive design"
+      {
+        "title": "Instant BMI Calculation",
+        "description": "Calculate BMI immediately after entering height and weight."
+      },
+      {
+        "title": "BMI Category Feedback",
+        "description": "Display BMI category and result messaging."
+      },
+      {
+        "title": "Dual Measurement Support",
+        "description": "Supports both metric and imperial systems."
+      },
+      {
+        "title": "Responsive Interface",
+        "description": "Optimized for mobile, tablet, and desktop devices."
+      }
     ],
     "futureImprovements": [],
-    "image": "/projects/bmi-calculator/home.png",
+    "thumbnail": {
+      "src": "/projects/bmi-calculator/home.png",
+      "alt": "BMI Calculator homepage interface"
+    },
     "gallery": [
-      "/projects/bmi-calculator/mobile.png",
-      "/projects/bmi-calculator/tablet.png",
-      "/projects/bmi-calculator/page.png",
-      "/projects/bmi-calculator/metric.png",
-      "/projects/bmi-calculator/imperial.png"
+      {
+        "src": "/projects/bmi-calculator/mobile.png",
+        "alt": "BMI Calculator mobile responsive layout"
+      },
+      {
+        "src": "/projects/bmi-calculator/tablet.png",
+        "alt": "BMI Calculator tablet responsive layout"
+      },
+      {
+        "src": "/projects/bmi-calculator/page.png",
+        "alt": "BMI Calculator full application page"
+      },
+      {
+        "src": "/projects/bmi-calculator/metric.png",
+        "alt": "BMI Calculator metric measurement mode"
+      },
+      {
+        "src": "/projects/bmi-calculator/imperial.png",
+        "alt": "BMI Calculator imperial measurement mode"
+      }
     ],
     "live": "https://bmi-calculator-seven-kappa.vercel.app/",
     "github": "https://github.com/Dev-EthanR/bmi-calculator/tree/main"
   },
+
   {
     "id": 7,
     "title": "Frontend Quiz App",
     "slug": "frontend-quiz-app",
-    "description": "Frontend Quiz App is an interactive web application that allows users to test their knowledge of frontend development topics including HTML, CSS, JavaScript, and Accessibility.",
+    "description": "Frontend Quiz App is an engaging educational application that allows users to test their understanding of frontend topics including HTML, CSS, JavaScript, and Accessibility. The app provides instant answer feedback, score summaries, and responsive layouts for a smooth experience across all devices.",
+    "concept": "Tests users on frontend development topics through interactive multiple-choice quizzes.",
     "displayTechnologies": ["JavaScript"],
     "technologies": ["HTML", "CSS", "JavaScript"],
     "features": [
-      "Multiple-choice questions",
-      "Instant answer selection feedback",
-      "Final score summary screen",
-      "Fully responsive design (mobile, tablet, desktop)"
+      {
+        "title": "Multiple Choice Questions",
+        "description": "Answer frontend-related quiz questions interactively."
+      },
+      {
+        "title": "Instant Feedback",
+        "description": "Receive immediate feedback after each answer."
+      },
+      {
+        "title": "Final Score Summary",
+        "description": "Review quiz performance at the end of each session."
+      },
+      {
+        "title": "Responsive Design",
+        "description": "Optimized for mobile, tablet, and desktop screens."
+      }
     ],
     "futureImprovements": [
-      "Add a timer for each question",
-      "Add score history"
+      {
+        "title": "Question Timer",
+        "description": "Introduce countdown timers for each question."
+      },
+      {
+        "title": "Score Tracking",
+        "description": "Store and display previous quiz scores."
+      }
     ],
-    "image": "/projects/frontend-quiz/home.png",
+    "thumbnail": {
+      "src": "/projects/frontend-quiz/home.png",
+      "alt": "Frontend Quiz App homepage"
+    },
     "gallery": [
-      "/projects/frontend-quiz/select.png",
-      "/projects/frontend-quiz/correct.png",
-      "/projects/frontend-quiz/incorrect.png",
-      "/projects/frontend-quiz/endscreen.png"
+      {
+        "src": "/projects/frontend-quiz/select.png",
+        "alt": "Frontend Quiz App answer selection screen"
+      },
+      {
+        "src": "/projects/frontend-quiz/correct.png",
+        "alt": "Frontend Quiz App correct answer feedback"
+      },
+      {
+        "src": "/projects/frontend-quiz/incorrect.png",
+        "alt": "Frontend Quiz App incorrect answer feedback"
+      },
+      {
+        "src": "/projects/frontend-quiz/endscreen.png",
+        "alt": "Frontend Quiz App final score summary screen"
+      }
     ],
     "live": "https://frontend-quiz-app-jade.vercel.app/",
     "github": "https://github.com/Dev-EthanR/frontend-quiz-app"

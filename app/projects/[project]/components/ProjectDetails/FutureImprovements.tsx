@@ -6,13 +6,23 @@ interface Props {
 const FutureImprovements = ({ data }: Props) => {
   if (data.futureImprovements.length === 0) return null;
   return (
-    <ul className="border-t md:border-l md:border-t-0 border-accent pt-3 md:pl-8">
-      <h3 className="text-xl font-medium mb-2 ">Future Improvements:</h3>
-      {data.futureImprovements.map((future) => (
-        <li key={future} className="list-disc max-w-90 text-sm md:text-base">
-          {future}
-        </li>
-      ))}
+    <ul>
+      <h3 className="text-xl md:text-3xl font-medium mb-5">
+        Future Improvements:
+      </h3>
+      <div className="flex flex-wrap gap-4">
+        {data.futureImprovements.map((improvement, index) => (
+          <li
+            key={improvement.title}
+            className="max-w-90 text-sm md:text-base border p-5 border-border bg-blue-950/10 rounded-sm"
+          >
+            <div className="text-primary-bright uppercase">
+              {(index + 1).toString().padStart(2, "0")} - {improvement.title}
+            </div>
+            <p className="text-white/55">{improvement.description}</p>
+          </li>
+        ))}
+      </div>
     </ul>
   );
 };

@@ -21,8 +21,8 @@ const ProjectCard = ({ details, href }: Props) => {
     >
       <Image
         className="w-full h-60 object-cover lg:h-40 xl:h-50 2xl:h-60 select-none"
-        src={details.image}
-        alt={details.title}
+        src={details.thumbnail.src}
+        alt={details.thumbnail.alt}
         width={450}
         height={400}
       />
@@ -39,7 +39,7 @@ const ProjectCard = ({ details, href }: Props) => {
             {details.title}
           </h3>
 
-          <p className="text-sm text-[#E0BFB5] mb-4">{details.description}</p>
+          <p className="text-sm text-[#E0BFB5] mb-4">{details.concept}</p>
         </div>
         <div className="flex gap-4" onClick={(e) => e.stopPropagation()}>
           <Button

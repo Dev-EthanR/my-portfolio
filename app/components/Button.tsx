@@ -6,7 +6,7 @@ interface BaseProps {
   variant: "primary" | "outline";
   children: ReactNode;
   className?: string;
-  size?: "large" | "small";
+  size?: "large" | "small" | "extraSmall";
 }
 
 interface ButtonProps extends BaseProps {
@@ -28,13 +28,14 @@ const Button = (props: Props) => {
 
   const baseClasses = "transition-colors cursor-pointer";
   const variantClasses = {
-    primary: "bg-primary text-white hover:bg-primary-glow font-extrabold",
+    primary: "bg-primary text-black/90 hover:bg-primary-glow font-extrabold",
     outline:
-      "text-text-primary font-light gap-2 border-border border bg-transparent hover:bg-border transition-colors",
+      "text-text-primary font-light gap-2 border-border border-2 bg-transparent hover:bg-border transition-colors",
   };
   const sizes = {
     large: "px-6 py-3",
     small: "px-4 py-1.5",
+    extraSmall: "px-2 py-2 text-sm rounded-md flex items-center justify-center",
   };
 
   const classes = clsx(
