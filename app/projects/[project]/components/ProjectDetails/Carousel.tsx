@@ -14,11 +14,11 @@ interface Props {
 
 const Carousel = ({ images, onClose, imageSelected }: Props) => {
   const [index, setIndex] = useState(imageSelected);
+  DisableBodyScroll(true);
 
   function prevImage() {
     const currentIndex = index;
     const maximumIndex = images.length - 1;
-
     if (currentIndex === 0) return setIndex(maximumIndex);
     return setIndex(currentIndex - 1);
   }
@@ -32,7 +32,6 @@ const Carousel = ({ images, onClose, imageSelected }: Props) => {
 
   return (
     <>
-      <DisableBodyScroll />
       <div className="w-full h-screen bg-black/60 fixed top-0 left-0 overflow-hidden flex flex-col items-end">
         <button
           className="w-40 h-40 flex items-start justify-end p-8 cursor-pointer hover:scale-105 duration-300 ease-in-out"

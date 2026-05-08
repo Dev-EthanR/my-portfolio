@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { footerLinks } from "../Footer";
+import { footerLinks } from "./layout/Footer";
 import Button from "./Button";
 
 const Hero = () => {

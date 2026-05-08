@@ -5,7 +5,7 @@ import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import clsx from "clsx";
 import { usePathname } from "next/navigation";
-import useDisableBodyScroll from "./hooks/DisableBodyScroll";
+import useDisableBodyScroll from "../../hooks/DisableBodyScroll";
 
 const links = [
   { name: "Home", href: "/" },

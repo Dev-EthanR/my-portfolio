@@ -3,7 +3,7 @@ import { useState } from "react";
 import Form from "./Form";
 import Toast from "./Toast";
 import Link from "next/link";
-import { footerLinks } from "@/app/Footer";
+import { footerLinks } from "@/app/components/layout/Footer";
 
 const Contact = () => {
   const [toastOpen, setToastOpen] = useState(false);
