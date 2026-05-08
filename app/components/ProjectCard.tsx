@@ -48,7 +48,7 @@ const ProjectCard = ({ details, href }: Props) => {
             target="_blank"
             className="font-semibold "
           >
-            🔗 Live
+            <span className="select-none">🔗</span> Live
           </Button>
           <Button
             variant="outline"
@@ -56,7 +56,7 @@ const ProjectCard = ({ details, href }: Props) => {
             target="_blank"
             className="font-light flex items-center gap-1"
           >
-            <span>{"<>"}</span>
+            <span className="select-none">{"<>"}</span>
             Source Code
           </Button>
         </div>

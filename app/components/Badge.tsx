@@ -10,7 +10,7 @@ const Badge = ({ imageSrc, title }: Props) => {
     <div>
       <div className="border-border border rounded-3xl p-4 flex items-center justify-center mb-2 gap-2">
         <Image
-          className="w-3 md:w-5"
+          className="w-3 md:w-5 select-none"
           src={imageSrc}
           alt={title}
           width={50}
