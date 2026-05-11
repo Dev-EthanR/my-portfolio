@@ -56,7 +56,13 @@ const ProjectCard = ({ details, href }: Props) => {
             target="_blank"
             className="font-light flex items-center gap-1"
           >
-            <span className="select-none">{"<>"}</span>
+            <Image
+              src="/logos/github.png"
+              alt="Github"
+              width={25}
+              height={25}
+              className="invert select-none"
+            />
             Source Code
           </Button>
         </div>
