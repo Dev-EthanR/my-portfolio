@@ -1,7 +1,6 @@
 "use client";
 import { Project } from "@/app/entities/project";
 import Image from "next/image";
-import { useState } from "react";
 
 interface Props {
   data: Project;

@@ -7,8 +7,8 @@ const FutureImprovements = ({ data }: Props) => {
   if (data.futureImprovements.length === 0) return null;
   return (
     <ul>
-      <h3 className="text-xl md:text-3xl font-medium mb-5">
-        Future Improvements:
+      <h3 className="text-xl md:text-3xl font-medium mb-5 uppercase">
+        Future Improvements
       </h3>
       <div className="flex flex-wrap gap-4">
         {data.futureImprovements.map((improvement, index) => (

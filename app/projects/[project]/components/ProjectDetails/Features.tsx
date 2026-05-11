@@ -8,7 +8,7 @@ const Features = ({ data }: Props) => {
   return (
     <ul className="bg-blue-950/10 border-border border rounded-sm p-6">
       <h3 className="text-xl md:text-3xl font-medium  uppercase border-b border-primary pb-4 mb-6">
-        Core Features:
+        Core Features
       </h3>
       {data.features.map((feature) => (
         <li
