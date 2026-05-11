@@ -1,4 +1,4 @@
-import jsonData from "@/projects.json";
+import jsonData from "@/data/projects.json";
 import ProjectDetails from "./components/ProjectDetails";
 
 const page = async ({ params }: { params: { project: string } }) => {

@@ -1,4 +1,4 @@
-import jsonData from "@/projects.json";
+import jsonData from "@/data/projects.json";
 import ProjectCard from "./ProjectCard";
 
 const RecommendedProject = () => {

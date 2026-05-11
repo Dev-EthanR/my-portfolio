@@ -1,5 +1,5 @@
 "use client";
-import jsonData from "@/projects.json";
+import jsonData from "@/data/projects.json";
 import Button from "./Button";
 import ProjectCard from "./ProjectCard";
 import { useIsMobile } from "../hooks/useIsMobile";

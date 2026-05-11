@@ -1,4 +1,4 @@
-import stack from "@/stack.json";
+import stack from "@/data/stack.json";
 const sections = [
   { key: "frontend" },
   { key: "backend" },
@@ -11,7 +11,7 @@ const TechArsenal = () => {
     items: stack.filter((tech) => tech.arsenal === section.key),
   }));
   return (
-    <div className="w-full max-w-230">
+    <div className="w-full max-w-230 mb-12">
       <h2 className="text-3xl font-medium mb-4">Technical Stack</h2>
       <div className="grid md:grid-cols-3 gap-4 w-full">
         {arsenal.map((section) => (
