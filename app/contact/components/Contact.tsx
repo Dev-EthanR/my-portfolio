@@ -9,7 +9,7 @@ const Contact = () => {
   const [toastOpen, setToastOpen] = useState(false);
   const [statusCode, setStatusCode] = useState(0);
   return (
-    <div className="text-left max-w-300 mx-auto">
+    <div className="text-left">
       <h1 className="text-4xl md:text-5xl font-bold mb-3 md:mb-6 text-center">
         Contact me
       </h1>

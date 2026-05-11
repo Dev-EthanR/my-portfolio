@@ -64,6 +64,7 @@ const Navbar = () => {
           alt={"Ethan Rechichi"}
           width={25}
           height={50}
+          preload
         />
       </div>
       <button
