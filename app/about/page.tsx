@@ -1,22 +1,32 @@
-import TechStack from "../components/TechStack";
+import TechArsenal from "./components/TechArsenal";
 
 const page = () => {
   return (
-    <div className="flex flex-col mt-9 w-full items-center">
-      <h1 className="text-3xl md:text-5xl font-bold mb-6 text-center">
-        Hi, I'm Ethan Rechichi
+    <div className="flex flex-col items-start mx-4 relative ">
+      <p className="text-sm font-medium border-l-2 pl-2 border-primary text-primary-bright w-fit mb-4 uppercase tracking-wider">
+        About Me
+      </p>
+      <h1 className="text-4xl md:text-5xl font-semibold mb-4">
+        Builder, Problem Solver
+        <span className="text-primary-bright block text-6xl md:text-6xl">
+          Full Stack
+        </span>
       </h1>
 
-      <p className="font-extralight text-[15px] md:text-xl text-left leading-8 w-full md:max-w-170 mb-10 md:mb-20">
-        I'm a full-stack developer based in{" "}
-        <span className="font-semibold"> Melbourne, Australia</span> building
-        web applications with <span className="font-semibold">React.js</span>,{" "}
-        <span className="font-semibold">Next.js</span>,{" "}
-        <span className="font-semibold">TypeScript</span> and{" "}
-        <span className="font-semibold">TailwindCSS</span>.
+      <p className="text-lg font-light text-[#e0bfb5] max-w-210 mb-6">
+        Ethan Rechichi is a designer-engineer hybrid focused on building digital
+        tools that bridge the gap between complex technical architecture and
+        intuitive user experience. Based in the intersection of logic and
+        aesthetics, he treats code like raw ore—refining it into high-
+        performance applications.
       </p>
-      <div className="border-b-accent border-b w-full mb-8 md:mb-14" />
-      <TechStack />
+      <p className="text-lg font-light text-[#e0bfb5] max-w-210 mb-6">
+        With a background in both architectural visualization and software
+        engineering, Ethan approaches every project with a &quot;measure twice,
+        cut once&quot; philosophy. He specializes in creating scalable systems
+        that don&apos;t just work, but feel effortless to use.
+      </p>
+      <TechArsenal />
     </div>
   );
 };
