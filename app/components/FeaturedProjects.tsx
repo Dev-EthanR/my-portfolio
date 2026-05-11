@@ -8,10 +8,8 @@ const FeaturedProjects = () => {
   const isMobile = useIsMobile(1024);
   return (
     <div className="flex flex-col items-center">
-      <h2 className="text-2xl font-bold mb-2">Featured Projects</h2>
-      <p className="text-sm font-light text-gray-300 mb-4">
-        Some of my recent work:
-      </p>
+      <h2 className="text-2xl lg:text-4xl font-bold mb-6">Featured Projects</h2>
+
       <div className="grid grid-cols-1 md:grid-cols-2 w-fit gap-6 mb-10 ">
         {jsonData.slice(isMobile ? 0 : 1, 3).map((data, index) => (
           <span

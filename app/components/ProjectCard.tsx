@@ -19,13 +19,15 @@ const ProjectCard = ({ details, href }: Props) => {
       onClick={() => router.push(href)}
       className="border-b-primary-dark border-primary-dark border hover:scale-105 transition-transform duration-300 cursor-pointer w-full flex flex-col h-full text-left"
     >
-      <Image
-        className="w-full h-60 object-cover lg:h-40 xl:h-50 2xl:h-60 select-none"
-        src={details.thumbnail.src}
-        alt={details.thumbnail.alt}
-        width={450}
-        height={400}
-      />
+      <div className="relative w-full aspect-video overflow-hidden">
+        <Image
+          className="object-cover select-none"
+          src={details.thumbnail.src}
+          alt={details.thumbnail.alt}
+          quality={100}
+          fill
+        />
+      </div>
 
       <div className="bg-surface p-3 lg:p-6 grow mb-auto flex flex-col justify-between">
         <div>
