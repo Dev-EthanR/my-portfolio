@@ -31,7 +31,7 @@ const Journey = () => {
             </p>
             <div
               className={clsx(
-                "absolute size-7 bg-border rounded-full border-[#191d24] border-7 -left-3.5 top-2.5 z-10",
+                "absolute size-7 bg-border rounded-full border-[#191d24] border-7 -left-3.75 top-2.5 z-10",
                 isPresentDate(data.date) && "bg-primary-bright",
               )}
             />
