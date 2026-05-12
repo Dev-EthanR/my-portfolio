@@ -51,7 +51,7 @@ const Navbar = () => {
   }
 
   return (
-    <div className="flex items-center mx-8 py-4 mb-10">
+    <div className="flex items-center mx-auto max-w-340 py-4 px-4 mb-10 w-full">
       <div className="absolute top-18.5 left-0 w-full border-b border-border z-0" />
       <div
         className={clsx(
