@@ -18,8 +18,9 @@ const Hero = () => {
         📍 Melbourne, Australia 🇦🇺
       </h3>
       <p className="text-lg font-light text-[#e0bfb5] max-w-xl">
-        I build things that work, scale, and look good doing it. Focused on
-        precision engineering and architectural clarity.{" "}
+        I build full-stack web applications from database design and
+        authentication through to responsive, polished frontends. Based in
+        Melbourne, open to opportunities.
       </p>
       <div className="flex items-center gap-4 mt-10">
         <Button

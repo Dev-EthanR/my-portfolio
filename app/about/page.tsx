@@ -16,17 +16,18 @@ const page = () => {
       </h1>
 
       <p className="text-sm lg:text-lg font-light text-[#e0bfb5] max-w-210 mb-6">
-        Ethan Rechichi is a designer-engineer hybrid focused on building digital
-        tools that bridge the gap between complex technical architecture and
-        intuitive user experience. Based in the intersection of logic and
-        aesthetics, he treats code like raw ore—refining it into high-
-        performance applications.
+        I am a full stack developer based in Melbourne, Australia. I build
+        complete web applications from the ground up, designing the database
+        schema, building the API, wiring up authentication, and shipping a
+        responsive frontend that actually works.
       </p>
       <p className="text-sm lg:text-lg text-[#e0bfb5] max-w-210 mb-12">
-        With a background in both architectural visualization and software
-        engineering, Ethan approaches every project with a &quot;measure twice,
-        cut once&quot; philosophy. He specializes in creating scalable systems
-        that don&apos;t just work, but feel effortless to use.
+        I started in electrical, moved into IT, and taught myself web
+        development through building real projects. That path gave me a
+        practical mindset. I care about things working correctly, not just
+        looking right. Right now I&apos;m working as a Software Developer at
+        Interpack while building a portfolio of full-stack applications to
+        transition fully into web development.
       </p>
       <TechArsenal />
       <Journey />

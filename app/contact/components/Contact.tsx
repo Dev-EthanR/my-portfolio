@@ -26,8 +26,7 @@ const Contact = () => {
             <span className="inline-block lg:block">something</span>
           </h2>
           <p className="max-w-100 text-gray-300/80 text-sm lg:text-base mx-auto lg:mx-0">
-            Currently focused on building high-performance technical
-            infrastructure and intentional design systems. Based in Melbourne.
+            Open to full-time developer roles, Based in Melbourne.
           </p>
 
           <div className="flex flex-col">
