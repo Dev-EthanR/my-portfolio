@@ -1,9 +1,9 @@
-import jsonData from "@/data/projects.json";
+import { projects } from "@/data/projects";
 import ProjectDetails from "./components/ProjectDetails";
 
 const page = async ({ params }: { params: { project: string } }) => {
   const { project } = await params;
-  const data = jsonData.find((data) => data.slug === project);
+  const data = projects.find((data) => data.slug === project);
 
   if (!data) return;
 

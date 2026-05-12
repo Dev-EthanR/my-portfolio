@@ -1,4 +1,4 @@
-import journeyData from "@/data/journey.json";
+import { journey } from "@/data/journey";
 import clsx from "clsx";
 
 const Journey = () => {
@@ -10,7 +10,7 @@ const Journey = () => {
     <div>
       <h2 className="text-3xl font-medium mb-4">The Journey</h2>
       <ul>
-        {journeyData.map((data, index) => (
+        {journey.map((data, index) => (
           <li
             key={index}
             className="py-4 border-l-2 pl-8 border-border relative"

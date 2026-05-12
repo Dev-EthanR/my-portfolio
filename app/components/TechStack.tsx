@@ -1,5 +1,5 @@
 import Badge from "./Badge";
-import stack from "@/data/stack.json";
+import { stack } from "@/data/stack";
 
 const TechStack = () => {
   return (

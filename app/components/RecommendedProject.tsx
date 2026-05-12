@@ -1,8 +1,8 @@
-import jsonData from "@/data/projects.json";
+import { projects } from "@/data/projects";
 import ProjectCard from "./ProjectCard";
 
 const RecommendedProject = () => {
-  const data = jsonData[0];
+  const data = projects[0];
   return (
     <div className="hidden lg:flex flex-col items-center">
       <div className=" mb-10 max-w-150 max-h-150">

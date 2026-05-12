@@ -1,4 +1,4 @@
-import stack from "@/data/stack.json";
+import { stack } from "@/data/stack";
 const sections = [
   { key: "frontend" },
   { key: "backend" },
