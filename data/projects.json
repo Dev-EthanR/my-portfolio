@@ -50,19 +50,23 @@
     "gallery": [
       {
         "src": "/projects/entertainment-web-app/bookmarks.png",
-        "alt": "Entertainment Web App bookmarks page"
+        "alt": "Bookmarks page — saved movies and TV series",
+        "type": "desktop"
       },
       {
         "src": "/projects/entertainment-web-app/search.png",
-        "alt": "Entertainment Web App search results interface"
+        "alt": "Search — live filtering across all titles",
+        "type": "desktop"
       },
       {
         "src": "/projects/entertainment-web-app/mobile.png",
-        "alt": "Entertainment Web App mobile responsive layout"
+        "alt": "Mobile layout — responsive browsing experience",
+        "type": "mobile"
       },
       {
         "src": "/projects/entertainment-web-app/auth.png",
-        "alt": "Entertainment Web App authentication screen"
+        "alt": "Authentication — login and sign up screen",
+        "type": "card"
       }
     ],
     "live": "https://entertainment-web-app-silk.vercel.app/",
@@ -115,19 +119,23 @@
     "gallery": [
       {
         "src": "/projects/job-tracker/analytics.png",
-        "alt": "Job Application Tracker analytics dashboard"
+        "alt": "Analytics — applications broken down by stage",
+        "type": "feature"
       },
       {
         "src": "/projects/job-tracker/modal.png",
-        "alt": "Job Application Tracker modal form interface"
+        "alt": "Add application modal — form with validation",
+        "type": "card"
       },
       {
         "src": "/projects/job-tracker/application-details.png",
-        "alt": "Job Application Tracker application details page"
+        "alt": "Application detail — status, date and notes",
+        "type": "card"
       },
       {
         "src": "/projects/job-tracker/mobile.png",
-        "alt": "Job Application Tracker mobile responsive design"
+        "alt": "Mobile layout — kanban on small screen",
+        "type": "mobile"
       }
     ],
     "live": "https://job-tracker-fullstack-two.vercel.app",
@@ -193,27 +201,33 @@
     "gallery": [
       {
         "src": "/projects/note-taking/create.png",
-        "alt": "Note Taking App create note interface"
+        "alt": "Create note — title, body and tag input",
+        "type": "card"
       },
       {
         "src": "/projects/note-taking/archived.png",
-        "alt": "Note Taking App archived notes page"
+        "alt": "Archived notes — soft-deleted with restore option",
+        "type": "desktop"
       },
       {
         "src": "/projects/note-taking/settings.png",
-        "alt": "Note Taking App settings and themes page"
+        "alt": "Settings — theme and font customisation",
+        "type": "card"
       },
       {
         "src": "/projects/note-taking/mobile1.png",
-        "alt": "Note Taking App mobile responsive layout"
+        "alt": "Mobile layout — notes list on small screen",
+        "type": "mobile"
       },
       {
         "src": "/projects/note-taking/search.png",
-        "alt": "Note Taking App search functionality"
+        "alt": "Search — filter notes by title, content and tags",
+        "type": "desktop"
       },
       {
         "src": "/projects/note-taking/auth.png",
-        "alt": "Note Taking App authentication screen"
+        "alt": "Authentication — login and sign up screen",
+        "type": "card"
       }
     ],
     "live": "https://note-taking-nine-blond.vercel.app",
@@ -262,15 +276,18 @@
     "gallery": [
       {
         "src": "/projects/movie-watchlist/mobile.png",
-        "alt": "Movie Watchlist mobile responsive layout"
+        "alt": "Mobile layout — responsive watchlist experience",
+        "type": "mobile"
       },
       {
         "src": "/projects/movie-watchlist/search.png",
-        "alt": "Movie Watchlist search results page"
+        "alt": "Search — find movies and TV shows by title",
+        "type": "desktop"
       },
       {
         "src": "/projects/movie-watchlist/watchlist.png",
-        "alt": "Movie Watchlist saved movies page"
+        "alt": "Watchlist — saved movies and series",
+        "type": "desktop"
       }
     ],
     "live": "https://movie-watchlist-plum-pi.vercel.app/",
@@ -311,15 +328,18 @@
     "gallery": [
       {
         "src": "/projects/password-generator/generate.png",
-        "alt": "Password Generator generate password feature"
+        "alt": "Generator — character options and length slider",
+        "type": "feature"
       },
       {
         "src": "/projects/password-generator/copy.png",
-        "alt": "Password Generator copy to clipboard functionality"
+        "alt": "Copy to clipboard — one-click copy interaction",
+        "type": "feature"
       },
       {
         "src": "/projects/password-generator/weak.png",
-        "alt": "Password Generator weak password strength example"
+        "alt": "Strength indicator — weak password visual feedback",
+        "type": "feature"
       }
     ],
     "live": "https://password-generator-app-pearl.vercel.app/",
@@ -360,23 +380,28 @@
     "gallery": [
       {
         "src": "/projects/bmi-calculator/mobile.png",
-        "alt": "BMI Calculator mobile responsive layout"
+        "alt": "Mobile layout — calculator on small screen",
+        "type": "mobile"
       },
       {
         "src": "/projects/bmi-calculator/tablet.png",
-        "alt": "BMI Calculator tablet responsive layout"
+        "alt": "Tablet layout — mid-size responsive view",
+        "type": "card"
       },
       {
         "src": "/projects/bmi-calculator/page.png",
-        "alt": "BMI Calculator full application page"
+        "alt": "Full page — complete calculator interface",
+        "type": "desktop"
       },
       {
         "src": "/projects/bmi-calculator/metric.png",
-        "alt": "BMI Calculator metric measurement mode"
+        "alt": "Metric mode — height and weight in cm and kg",
+        "type": "card"
       },
       {
         "src": "/projects/bmi-calculator/imperial.png",
-        "alt": "BMI Calculator imperial measurement mode"
+        "alt": "Imperial mode — height and weight in ft and lbs",
+        "type": "card"
       }
     ],
     "live": "https://bmi-calculator-seven-kappa.vercel.app/",
@@ -426,19 +451,23 @@
     "gallery": [
       {
         "src": "/projects/frontend-quiz/select.png",
-        "alt": "Frontend Quiz App answer selection screen"
+        "alt": "Answer selection — multiple choice question",
+        "type": "card"
       },
       {
         "src": "/projects/frontend-quiz/correct.png",
-        "alt": "Frontend Quiz App correct answer feedback"
+        "alt": "Correct answer — instant feedback state",
+        "type": "card"
       },
       {
         "src": "/projects/frontend-quiz/incorrect.png",
-        "alt": "Frontend Quiz App incorrect answer feedback"
+        "alt": "Incorrect answer — error feedback state",
+        "type": "card"
       },
       {
         "src": "/projects/frontend-quiz/endscreen.png",
-        "alt": "Frontend Quiz App final score summary screen"
+        "alt": "End screen — final score summary",
+        "type": "card"
       }
     ],
     "live": "https://frontend-quiz-app-jade.vercel.app/",

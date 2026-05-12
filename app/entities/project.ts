@@ -8,9 +8,11 @@ interface ProjectImprovement {
   description: string;
 }
 
+type Size = "desktop" | "mobile" | "card" | "feature";
 interface Image {
   src: string;
   alt: string;
+  type: Size;
 }
 export interface Project {
   id: number;
@@ -22,7 +24,7 @@ export interface Project {
   technologies: string[];
   features: ProjectFeature[];
   futureImprovements: ProjectImprovement[];
-  thumbnail: Image;
+  thumbnail: Omit<Image, "type">;
   gallery: Image[];
   live: string;
   github: string;
