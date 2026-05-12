@@ -8,11 +8,10 @@ interface ProjectImprovement {
   description: string;
 }
 
-type Size = "desktop" | "mobile" | "card" | "feature";
-interface Image {
+export interface Image {
   src: string;
   alt: string;
-  type: Size;
+  type: "desktop" | "mobile" | "card" | "feature";
 }
 export interface Project {
   id: number;

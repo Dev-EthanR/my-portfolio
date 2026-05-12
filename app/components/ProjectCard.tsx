@@ -24,7 +24,6 @@ const ProjectCard = ({ details, href }: Props) => {
           className="object-cover select-none"
           src={details.thumbnail.src}
           alt={details.thumbnail.alt}
-          quality={100}
           fill
         />
       </div>

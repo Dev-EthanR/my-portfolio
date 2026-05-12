@@ -232,14 +232,14 @@ export const projects: Project[] = [
         type: "card",
       },
       {
+        src: "/projects/note-taking/search.png",
+        alt: "Search — filter notes by title, content and tags",
+        type: "feature",
+      },
+      {
         src: "/projects/note-taking/mobile1.png",
         alt: "Mobile layout — notes list on small screen",
         type: "mobile",
-      },
-      {
-        src: "/projects/note-taking/search.png",
-        alt: "Search — filter notes by title, content and tags",
-        type: "desktop",
       },
       {
         src: "/projects/note-taking/auth.png",
