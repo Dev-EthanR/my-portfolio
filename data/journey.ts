@@ -7,7 +7,7 @@ interface Journey {
 export const journey: Journey[] = [
   {
     date: "2026 - PRESENT",
-    title: "Software Developer | Interpack Pty Ltd",
+    title: "Software Developer Intern | Interpack Pty Ltd",
     description: "File check Automation to replace manual checking",
   },
   {
