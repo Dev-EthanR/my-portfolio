@@ -18,9 +18,9 @@ const page = async ({ searchParams }: { searchParams: { tech?: string } }) => {
       </h1>
       <ProjectFilter data={projects} />
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 ">
-        {filteredData.map((data) => (
+        {filteredData.map((data, index) => (
           <ProjectCard
-            key={data.id}
+            key={index}
             details={data}
             href={`/projects/${data.slug}`}
           />

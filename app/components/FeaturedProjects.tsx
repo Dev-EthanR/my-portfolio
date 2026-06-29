@@ -13,7 +13,7 @@ const FeaturedProjects = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 w-fit gap-6 mb-10 ">
         {projects.slice(isMobile ? 0 : 1, 3).map((data, index) => (
           <span
-            key={data.id}
+            key={index}
             className={index === 2 ? "md:col-span-2 max-w-md mx-auto" : ""}
           >
             <ProjectCard details={data} href={`/projects/${data.slug}`} />

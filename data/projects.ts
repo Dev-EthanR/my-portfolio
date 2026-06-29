@@ -2,7 +2,103 @@ import { Project } from "@/app/entities/project";
 
 export const projects: Project[] = [
   {
-    id: 1,
+    title: "Resume screener",
+    slug: "resume-screener",
+    description:
+      "AI-powered resume screening tool that analyses how well a candidate's resume matches a job description. Users upload a PDF resume, paste a job description, and receive an instant match score, skills gap analysis, and AI-generated resume bullet rewrites",
+    concept:
+      "AI resume screener that scores resume-to-job-description fit, surfaces missing skills, and rewrites weak bullet points using streaming AI responses.",
+    displayTechnologies: ["Next.js", "TypeScript", "PostgreSQL", "Open AI API"],
+    technologies: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "TailwindCSS",
+      "Prisma",
+      "PostgreSQL",
+      "NextAuth",
+      "Open AI API",
+      "Tanstack Query",
+    ],
+    features: [
+      {
+        title: "AI Match Score",
+        description:
+          "Analyses resume against a job description and returns a percentage match score",
+      },
+      {
+        title: "Skills Gap Analysis",
+        description:
+          "Identifies matched and missing skills from the job description",
+      },
+      {
+        title: "AI Bullet Rewriter",
+        description:
+          "Rewrites weak resume bullet points inline with streaming AI responses.",
+      },
+      {
+        title: "Cover Letter Generator",
+        description:
+          "Generates a tailored cover letter based on the uploaded resume and job description. Stream the output in real time and copy the result.",
+      },
+      {
+        title: "Analysis History",
+        description:
+          "Saves all past analyses with match scores, resume filename, job title, and company. Click any card to reopen the full report.",
+      },
+    ],
+    futureImprovements: [
+      {
+        title: "ATS Score Simulation",
+        description:
+          "Simulate how an Applicant Tracking System would parse and rank the resume independently of the AI score.",
+      },
+      {
+        title: "Stripe Free Tier",
+        description:
+          "Gate usage to 3 free analyses per month with a Stripe-powered pro subscription for unlimited access.",
+      },
+    ],
+    thumbnail: {
+      src: "/projects/resumatch/result.png",
+      alt: "Resumatch — home",
+    },
+    gallery: [
+      {
+        src: "/projects/resumatch/upload.png",
+        alt: "Upload page — resume PDF drop zone and job description input",
+        type: "feature",
+      },
+      {
+        src: "/projects/resumatch/analyse.png",
+        alt: "Generating screen for results",
+        type: "feature",
+      },
+      {
+        src: "/projects/resumatch/cover-letter.png",
+        alt: "Generate a tailored cover letter for the job",
+        type: "feature",
+      },
+      {
+        src: "/projects/resumatch/history.png",
+        alt: "Analysis history — saved scans with scores and dates",
+        type: "feature",
+      },
+      {
+        src: "/projects/resumatch/dashboard.png",
+        alt: "Bullet rewriter — streaming AI rewrite with accept and regenerate",
+        type: "feature",
+      },
+      {
+        src: "/projects/resumatch/auth.png",
+        alt: "Authentication login/signup screen",
+        type: "card",
+      },
+    ],
+    live: "https://resume-screener-xi-beryl.vercel.app/",
+    github: "https://github.com/Dev-EthanR/resume-screener",
+  },
+  {
     title: "Entertainment Web App",
     slug: "entertainment-web-app",
     description:
@@ -81,7 +177,6 @@ export const projects: Project[] = [
   },
 
   {
-    id: 2,
     title: "Job Application Tracker",
     slug: "job-application-tracker",
     description:
@@ -155,7 +250,6 @@ export const projects: Project[] = [
   },
 
   {
-    id: 3,
     title: "Note Taking App",
     slug: "note-taking-app",
     description:
@@ -252,7 +346,6 @@ export const projects: Project[] = [
   },
 
   {
-    id: 4,
     title: "Movie Watchlist",
     slug: "movie-watchlist",
     description:
@@ -316,7 +409,6 @@ export const projects: Project[] = [
   },
 
   {
-    id: 5,
     title: "Password Generator",
     slug: "password-generator",
     description:
@@ -370,7 +462,6 @@ export const projects: Project[] = [
   },
 
   {
-    id: 6,
     title: "BMI Calculator",
     slug: "bmi-calculator",
     description:
@@ -435,7 +526,6 @@ export const projects: Project[] = [
   },
 
   {
-    id: 7,
     title: "Frontend Quiz App",
     slug: "frontend-quiz-app",
     description:

@@ -8,7 +8,8 @@ export const journey: Journey[] = [
   {
     date: "2026 - PRESENT",
     title: "Software Developer Intern | Interpack Pty Ltd",
-    description: "File check Automation to replace manual checking",
+    description:
+      "Building an internal forecast upload system with Microsoft authentication, multi-format spreadsheet parsing, automated product matching against a D365 database, and upload history logging.",
   },
   {
     date: "2025",

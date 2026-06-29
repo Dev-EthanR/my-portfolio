@@ -18,7 +18,7 @@ const Toast = ({ open, setOpen, status }: Props) => {
   }, [open]);
 
   if (!open) return null;
-  let styles = {
+  const styles = {
     background: "",
     message: "",
   };
