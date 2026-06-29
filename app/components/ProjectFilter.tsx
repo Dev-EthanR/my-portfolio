@@ -23,7 +23,7 @@ const ProjectFilter = ({ data }: Props) => {
       {techOverview.displayTechnologies.map((tech) => (
         <Button
           key={tech}
-          className="inline-block px-3 lg:px-6 py-1 mb-4 rounded-full text-xs lg:text-sm font-medium mr-2  cursor-pointer transition-colors"
+          className="inline-block px-3 lg:px-6 py-1 mb-4 rounded-full text-xs lg:text-sm font-medium mr-2  cursor-pointer transition-colors whitespace-nowrap"
           variant={
             !searchParams.get("tech") && tech === "All"
               ? "primary"
