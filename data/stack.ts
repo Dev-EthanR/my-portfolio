@@ -1,8 +1,12 @@
-interface Stack {
+type StackBase = {
   title: string;
-  src: string;
   arsenal: "frontend" | "backend" | "tools";
-}
+  aboutOnly?: boolean;
+};
+
+export type Stack =
+  | (StackBase & { src: string })
+  | (StackBase & { aboutOnly: true });
 
 export const stack: Stack[] = [
   { title: "HTML", src: "/badges/html.png", arsenal: "frontend" },
@@ -20,4 +24,7 @@ export const stack: Stack[] = [
   { title: "Vercel", src: "/badges/vercel.svg", arsenal: "tools" },
   { title: "C#", src: "/badges/csharp.avif", arsenal: "backend" },
   { title: "Python", src: "/badges/python.png", arsenal: "backend" },
+  { title: "Zod", arsenal: "tools", aboutOnly: true },
+  { title: "Tanstack Query", arsenal: "tools", aboutOnly: true },
+  { title: "Next Auth", arsenal: "tools", aboutOnly: true },
 ];

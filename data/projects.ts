@@ -592,3 +592,199 @@ export const projects: Project[] = [
     github: "https://github.com/Dev-EthanR/frontend-quiz-app",
   },
 ];
+
+/*
+{
+  id: 4,
+  title: "Quizly",
+  slug: "quizly",
+  description:
+    "Quizly is a real-time multiplayer quiz platform where a host creates a quiz, players join via a room code, and everyone answers questions simultaneously. Live leaderboard updates after each round and an in-game chat channel run in parallel — all powered by WebSockets.",
+  concept:
+    "Real-time multiplayer quiz game with live scoring, presence, and in-game chat — all synced across players via WebSockets.",
+  displayTechnologies: ["Next.js", "TypeScript", "Socket.io", "PostgreSQL"],
+  technologies: [
+    "Next.js",
+    "React",
+    "TypeScript",
+    "TailwindCSS",
+    "Socket.io",
+    "Prisma",
+    "PostgreSQL",
+    "NextAuth",
+    "Redis",
+    "Zod",
+  ],
+  features: [
+    {
+      title: "Real-time Multiplayer",
+      description:
+        "Players join a room via a code and answer questions simultaneously. All game state is synced in real time via Socket.io.",
+    },
+    {
+      title: "Live Leaderboard",
+      description:
+        "Leaderboard updates after every question with animated position changes, points earned this round, and total scores.",
+    },
+    {
+      title: "In-game Live Chat",
+      description:
+        "A parallel chat channel runs alongside the game. Players can send messages, quick reactions, and see system events like joins and round starts.",
+    },
+    {
+      title: "Host Controls",
+      description:
+        "The host creates the quiz, controls the lobby, starts the game, and advances rounds. Players see a waiting state until the host acts.",
+    },
+  ],
+  futureImprovements: [
+    {
+      title: "Achievements",
+      description:
+        "Award badges for milestones like first win, perfect score, and fastest answer.",
+    },
+    {
+      title: "Public Quiz Library",
+      description:
+        "Let hosts publish quizzes publicly so other users can discover and host them.",
+    },
+  ],
+  thumbnail: {
+    src: "/projects/quizly/desktop.png",
+    alt: "Quizly — live question screen with timer and answer options",
+  },
+  gallery: [
+    {
+      src: "/projects/quizly/lobby.png",
+      alt: "Lobby — players joined with room code and ready states",
+      type: "feature",
+    },
+    {
+      src: "/projects/quizly/question.png",
+      alt: "Question screen — live timer, answer grid, and chat sidebar",
+      type: "feature",
+    },
+    {
+      src: "/projects/quizly/results.png",
+      alt: "Round results — correct answer reveal and leaderboard update",
+      type: "card",
+    },
+    {
+      src: "/projects/quizly/final.png",
+      alt: "Final results — podium, full leaderboard, and post-game chat",
+      type: "card",
+    },
+    {
+      src: "/projects/quizly/mobile.png",
+      alt: "Mobile layout — question screen with slide-up chat drawer",
+      type: "mobile",
+    },
+  ],
+  live: "https://quizly.vercel.app",
+  github: "https://github.com/Dev-EthanR/quizly",
+}
+  */
+
+/*
+{
+  id: 5,
+  title: "Marketa",
+  slug: "marketa",
+  description:
+    "Marketa is a multi-vendor digital goods marketplace where sellers upload and sell digital products — UI kits, fonts, icon packs, code snippets, and templates. Buyers browse, purchase, and instantly download. Admins manage the platform, approve sellers, and handle refunds. Stripe Connect powers split payouts between sellers and the platform.",
+  concept:
+    "Multi-vendor digital goods marketplace with three-role access, Stripe Connect payouts, S3 file storage, and signed download URLs.",
+  displayTechnologies: ["Next.js", "TypeScript", "Stripe Connect", "AWS S3"],
+  technologies: [
+    "Next.js",
+    "React",
+    "TypeScript",
+    "TailwindCSS",
+    "Prisma",
+    "PostgreSQL",
+    "NextAuth",
+    "Stripe Connect",
+    "AWS S3",
+    "Redis",
+    "Zod",
+    "Resend",
+  ],
+  features: [
+    {
+      title: "Multi-vendor Stripe Connect",
+      description:
+        "Sellers onboard via Stripe Connect Express. Every purchase splits automatically — seller receives their cut, platform takes a fee. Payouts tracked per seller.",
+    },
+    {
+      title: "Role-based Access Control",
+      description:
+        "Three roles — admin, seller, and buyer — each with a separate dashboard and permissions. Sellers apply and require admin approval before listing products.",
+    },
+    {
+      title: "S3 File Uploads + Signed URLs",
+      description:
+        "Sellers upload product files and thumbnails to AWS S3. Buyers receive a time-limited signed download URL only after a confirmed payment.",
+    },
+    {
+      title: "Webhook-driven Order Flow",
+      description:
+        "Stripe webhooks handle payment confirmation, payout notifications, and refund processing. Download access is granted server-side on payment success.",
+    },
+    {
+      title: "Admin Dashboard",
+      description:
+        "Platform-wide view of all transactions, seller approvals, refund requests, and revenue. Admins can approve or reject sellers and issue refunds directly.",
+    },
+  ],
+  futureImprovements: [
+    {
+      title: "Product Reviews",
+      description:
+        "Allow buyers to leave star ratings and written reviews on purchased products.",
+    },
+    {
+      title: "Discount Codes",
+      description:
+        "Sellers can create Stripe discount codes for their own products, managed via the seller dashboard.",
+    },
+  ],
+  thumbnail: {
+    src: "/projects/marketa/desktop.png",
+    alt: "Marketa — product listing page with category filters and product cards",
+  },
+  gallery: [
+    {
+      src: "/projects/marketa/storefront.png",
+      alt: "Storefront — featured products, categories, and trending row",
+      type: "feature",
+    },
+    {
+      src: "/projects/marketa/product.png",
+      alt: "Product detail — preview images, description, and buy button",
+      type: "feature",
+    },
+    {
+      src: "/projects/marketa/seller-dashboard.png",
+      alt: "Seller dashboard — revenue chart, product list, and payout history",
+      type: "card",
+    },
+    {
+      src: "/projects/marketa/admin.png",
+      alt: "Admin dashboard — seller approvals, transactions, and refund requests",
+      type: "card",
+    },
+    {
+      src: "/projects/marketa/upload.png",
+      alt: "Product upload — form with file drop zone and thumbnail preview",
+      type: "card",
+    },
+    {
+      src: "/projects/marketa/mobile.png",
+      alt: "Mobile layout — product grid with bottom sheet filters",
+      type: "mobile",
+    },
+  ],
+  live: "https://marketa.vercel.app",
+  github: "https://github.com/Dev-EthanR/marketa",
+}
+  */
