@@ -119,7 +119,7 @@ const ResumeLink = () => {
   return (
     <Link
       className="border border-primary-bright px-6 py-2 hover:bg-primary-bright hover:text-background font-medium"
-      href={"/Ethan_Rechichi.docx.pdf"}
+      href={"/Ethan_Rechichi_Resume.pdf"}
       download
     >
       Resume
