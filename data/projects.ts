@@ -346,69 +346,6 @@ export const projects: Project[] = [
   },
 
   {
-    title: "Movie Watchlist",
-    slug: "movie-watchlist",
-    description:
-      "Movie Watchlist is a React-based application that allows users to search for movies and TV shows, then save them into a personal watchlist. The app provides persistent local storage support, responsive layouts, and an intuitive browsing experience for tracking entertainment content users want to watch later.",
-    concept:
-      "Allows users to search for movies and TV series and save them into a personalized watchlist.",
-    displayTechnologies: ["JavaScript", "React"],
-    technologies: ["JavaScript", "React", "TailwindCSS", "API"],
-    features: [
-      {
-        title: "Movie and TV Search",
-        description: "Search entertainment content by title.",
-      },
-      {
-        title: "Personal Watchlist",
-        description: "Save movies and TV series into a custom watchlist.",
-      },
-      {
-        title: "Persistent Storage",
-        description: "Keep watchlist data saved using local storage.",
-      },
-      {
-        title: "Responsive Design",
-        description: "Optimized layouts across desktop and mobile devices.",
-      },
-    ],
-    futureImprovements: [
-      {
-        title: "Detailed Movie Pages",
-        description:
-          "Display additional information including ratings and overviews.",
-      },
-      {
-        title: "Filtering and Sorting",
-        description: "Allow sorting by genre, year, and ratings.",
-      },
-    ],
-    thumbnail: {
-      src: "/projects/movie-watchlist/homep.png",
-      alt: "Movie Watchlist homepage interface",
-    },
-    gallery: [
-      {
-        src: "/projects/movie-watchlist/mobile.png",
-        alt: "Mobile layout — responsive watchlist experience",
-        type: "mobile",
-      },
-      {
-        src: "/projects/movie-watchlist/search.png",
-        alt: "Search — find movies and TV shows by title",
-        type: "desktop",
-      },
-      {
-        src: "/projects/movie-watchlist/watchlist.png",
-        alt: "Watchlist — saved movies and series",
-        type: "desktop",
-      },
-    ],
-    live: "https://movie-watchlist-plum-pi.vercel.app/",
-    github: "https://github.com/Dev-EthanR/Movie-Watchlist/tree/main",
-  },
-
-  {
     title: "Password Generator",
     slug: "password-generator",
     description:
