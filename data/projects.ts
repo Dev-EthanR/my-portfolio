@@ -8,7 +8,7 @@ export const projects: Project[] = [
       "AI-powered resume screening tool that analyses how well a candidate's resume matches a job description. Users upload a PDF resume, paste a job description, and receive an instant match score, skills gap analysis, and AI-generated resume bullet rewrites",
     concept:
       "AI resume screener that scores resume-to-job-description fit, surfaces missing skills, and rewrites weak bullet points using streaming AI responses.",
-    displayTechnologies: ["Next.js", "TypeScript", "PostgreSQL", "Open AI API"],
+    displayTechnologies: ["Next.js", "TypeScript", "PostgreSQL", "OpenAI API"],
     technologies: [
       "Next.js",
       "React",
@@ -97,6 +97,373 @@ export const projects: Project[] = [
     ],
     live: "https://resume-screener-xi-beryl.vercel.app/",
     github: "https://github.com/Dev-EthanR/resume-screener",
+  },
+  {
+    title: "Quizzly",
+    slug: "quizzly",
+    description:
+      "Quizzly is a real-time multiplayer quiz platform where a host creates a quiz, players join via a room code, and everyone answers questions simultaneously. Live leaderboard updates after each round and an in-game chat channel run in parallel — all powered by WebSockets.",
+    concept:
+      "Real-time multiplayer quiz game with live scoring, presence, and in-game chat — all synced across players via WebSockets.",
+    displayTechnologies: [
+      "React",
+      "TypeScript",
+      "Socket.io",
+      "Express",
+      "OpenAI API",
+      "PostgreSQL",
+    ],
+    technologies: [
+      "React",
+      "Vite",
+      "TypeScript",
+      "TanStack Query",
+      "TailwindCSS",
+      "Socket.io",
+      "Express",
+      "Prisma",
+      "PostgreSQL",
+      "OpenAI API",
+      "Auth.js",
+      "Zod",
+    ],
+    features: [
+      {
+        title: "Room-code lobbies",
+        description:
+          "Players join any live game with a 6-character room code, a username, and an avatar color — no account required. Hosts can kick players, mute them from chat, and control late-join access.",
+      },
+      {
+        title: "Live multiplayer gameplay",
+        description:
+          "Questions broadcast to every player in real time over Socket.io, with a synced countdown, answer submission, live answer-progress counts, and an instant reveal once everyone has answered or time runs out.",
+      },
+      {
+        title: "AI-generated quizzes and answers",
+        description:
+          "Hosts can generate a full quiz from just a title, or generate plausible answer options for a single question, via structured OpenAI completions (gpt-4o with a gpt-4o-mini fallback) — with duplicate-question avoidance when regenerating.",
+      },
+      {
+        title: "Quiz builder and publishing",
+        description:
+          "Drafts are autosaved as they're built, with multiple-choice, single-choice, and true/false question types, per-question time limits and point values, and a publish flow that adds a cover image, category, difficulty, tags, and visibility before it's listed.",
+      },
+      {
+        title: "Discovery page",
+        description:
+          "Browse, search, and page through publicly published quizzes, view quiz details, and save quizzes to a personal library to re-host later.",
+      },
+      {
+        title: "Live lobby chat",
+        description:
+          "Real-time chat alongside the lobby and game, with host controls to disable chat entirely or mute individual players.",
+      },
+      {
+        title: "Leaderboard and podium",
+        description:
+          "A ranked leaderboard shown after every question and a final three-place podium screen at the end of the game.",
+      },
+      {
+        title: "Host summary and analytics",
+        description:
+          "Post-game breakdown for hosts covering completion rate, average accuracy and response time, the fastest responder, and the hardest question, backed by persisted per-session game history.",
+      },
+      {
+        title: "Reconnection handling",
+        description:
+          "Hosts and players who disconnect get a grace period to rejoin their in-progress room before being dropped, with dedicated UI for host-disconnected, reconnecting, removed-from-lobby, and room-not-found states.",
+      },
+      {
+        title: "Accounts and dashboard",
+        description:
+          "Sign in with email/password or Google via Auth.js; signed-in users get a dashboard with games played, average score, best finish, wins, recent game results, previously hosted quizzes, and progress-tracked achievements (20+ unlockable badges).",
+      },
+      {
+        title: "Profile settings",
+        description:
+          "Update display name and avatar color/image, change password, and manage a linked Google account.",
+      },
+    ],
+    futureImprovements: [
+      {
+        title: "Alternate game modes",
+        description:
+          "Teams mode, Last One Standing elimination play, and a Speed-run scoring mode, each requiring their own state machine and scoring rules on top of the current single-round game loop.",
+      },
+      {
+        title: "Chat reactions",
+        description:
+          "Lightweight emoji reactions on live chat messages during the lobby and game.",
+      },
+      {
+        title: "Public shareable result screens",
+        description:
+          "A dedicated public URL for a completed game's results, rather than relying on copying the current page link.",
+      },
+      {
+        title: "End-of-quiz star rating",
+        description:
+          "Let players rate a quiz out of 5 stars after it ends, feeding into quiz quality/discovery ranking.",
+      },
+      {
+        title: "Dedicated file storage for uploads",
+        description:
+          "Cover images and avatars currently persist as base64 data URIs; moving to object storage (e.g. Uploadthing) would cut payload size and page weight.",
+      },
+    ],
+    thumbnail: {
+      src: "/projects/quizzly/thumbnail.png",
+      alt: "Quizzly — live question screen with timer and answer results",
+    },
+    gallery: [
+      {
+        src: "/projects/quizzly/home.png",
+        alt: "Home — room code entry to join a live game",
+        type: "feature",
+      },
+      {
+        src: "/projects/quizzly/lobby.png",
+        alt: "Lobby — players joined with room code and live chat",
+        type: "feature",
+      },
+      {
+        src: "/projects/quizzly/reconnecting.png",
+        alt: "Reconnecting — automatic recovery after a dropped connection",
+        type: "card",
+      },
+      {
+        src: "/projects/quizzly/question.png",
+        alt: "Question screen — live timer, answer grid, and chat sidebar",
+        type: "feature",
+      },
+
+      {
+        src: "/projects/quizzly/answer-reveal.png",
+        alt: "Answer reveal — correct answer highlighted green, incorrect red",
+        type: "card",
+      },
+      {
+        src: "/projects/quizzly/results.png",
+        alt: "Round results — leaderboard update after each question",
+        type: "card",
+      },
+      {
+        src: "/projects/quizzly/final.png",
+        alt: "Final results — podium and full leaderboard",
+        type: "card",
+      },
+      {
+        src: "/projects/quizzly/host-summary.png",
+        alt: "Host summary — accuracy, response time, and question breakdown",
+        type: "card",
+      },
+      {
+        src: "/projects/quizzly/dashboard.png",
+        alt: "Dashboard — player stats and recent games",
+        type: "feature",
+      },
+      {
+        src: "/projects/quizzly/achievements.png",
+        alt: "Achievements — earned and locked badges",
+        type: "feature",
+      },
+
+      {
+        src: "/projects/quizzly/discovery.png",
+        alt: "Discovery — browse and filter published quizzes",
+        type: "feature",
+      },
+      {
+        src: "/projects/quizzly/quiz-builder.png",
+        alt: "Quiz builder — question list and live player preview",
+        type: "feature",
+      },
+      {
+        src: "/projects/quizzly/question-editor.png",
+        alt: "Question editor — answers, timing, and points",
+        type: "feature",
+      },
+
+      {
+        src: "/projects/quizzly/ai-result.png",
+        alt: "AI result — generated questions ready to review and add",
+        type: "feature",
+      },
+      {
+        src: "/projects/quizzly/publish-flow.png",
+        alt: "Publish flow — category, difficulty, tags, and cover image",
+        type: "feature",
+      },
+      {
+        src: "/projects/quizzly/mobile-lobby.png",
+        alt: "Mobile lobby — player roster and chat",
+        type: "mobile",
+      },
+    ],
+    live: "https://quizly-l514.onrender.com/",
+    github: "https://github.com/Dev-EthanR/quizly",
+  },
+  {
+    title: "Stash",
+    slug: "stash",
+    description:
+      "Stash is a multi-vendor digital goods marketplace where sellers upload and sell digital products — UI kits, fonts, icon packs, code snippets, and templates. Buyers browse, purchase, and instantly download. Admins manage the platform, approve sellers, and handle refunds. Stripe Connect powers split payouts between sellers and the platform.",
+    concept:
+      "Multi-vendor digital goods marketplace with three-role access, Stripe Connect payouts, Uploadthing file storage",
+    displayTechnologies: ["Next.js", "TypeScript", "Stripe", "PostgreSQL"],
+    technologies: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "TailwindCSS",
+      "Prisma",
+      "PostgreSQL",
+      "NextAuth",
+      "Stripe",
+      "TanStack Query",
+      "Recharts",
+      "Uploadthing",
+      "Zod",
+    ],
+    features: [
+      {
+        title: "Seller onboarding & product listings",
+        description:
+          "Multi-step seller signup wizard with Stripe Connect Express onboarding, plus product CRUD with draft/published states, file versioning, thumbnails, and preview image galleries uploaded via UploadThing.",
+      },
+      {
+        title: "Marketplace browsing, cart & wishlist",
+        description:
+          "Category and price-range filtering, product search, a shopping cart, and a wishlist, all backed by React Query hooks and a dedicated browse API.",
+      },
+      {
+        title: "Stripe Connect checkout & payouts",
+        description:
+          "Stripe Checkout sessions for cart purchases, with a 95/5 seller/platform revenue split via Stripe Transfers, self-purchase and unonboarded-seller safeguards, and idempotent order creation on the success page.",
+      },
+      {
+        title: "Refunds & dispute handling",
+        description:
+          "Buyers can request refunds; admins approve or reject them; Stripe webhooks handle chargeback disputes end-to-end, revoking and later reinstating signed download links based on dispute outcome.",
+      },
+      {
+        title: "Secure, expiring digital downloads",
+        description:
+          "Purchased files are served through UploadThing signed URLs with 24-hour expiry, reissued after successful purchase or a dispute won in the seller's favor.",
+      },
+      {
+        title: "Product reviews & ratings",
+        description:
+          "Buyers can leave star ratings and written reviews per product, with aggregated rating summaries shown on product pages.",
+      },
+      {
+        title: "Role-based dashboards",
+        description:
+          "A single role-aware dashboard shell for buyers (purchases, wishlist, cart), sellers (product/order management, revenue chart), and admins (user, product, order, and refund management with role changes).",
+      },
+      {
+        title: "Admin management console",
+        description:
+          "Admins can view and manage all users (including role changes), products, orders, and refund requests through sortable, searchable data tables.",
+      },
+    ],
+    futureImprovements: [
+      {
+        title: "Discount Codes",
+        description:
+          "Sellers can create Stripe discount codes for their own products, managed via the seller dashboard.",
+      },
+    ],
+    thumbnail: {
+      src: "/projects/stash/browse.png",
+      alt: "Stash — product listing page with category filters and product cards",
+    },
+    gallery: [
+      {
+        src: "/projects/stash/browse.png",
+        alt: "Browse products — category, price, and rating filters applied",
+        type: "feature",
+      },
+      {
+        src: "/projects/stash/payment.png",
+        alt: "Payment processing — Stripe Checkout integration",
+        type: "feature",
+      },
+      {
+        src: "/projects/stash/reviews.png",
+        alt: "Product reviews — star ratings and written buyer feedback",
+        type: "feature",
+      },
+      {
+        src: "/projects/stash/checkout-success.png",
+        alt: "Checkout — Stripe payment confirmed and order created",
+        type: "feature",
+      },
+      {
+        src: "/projects/stash/seller-dashboard.png",
+        alt: "Seller dashboard — revenue chart, product count, and order stats",
+        type: "card",
+      },
+      {
+        src: "/projects/stash/seller-onboarding.png",
+        alt: "Seller onboarding — Stripe Connect payment setup step",
+        type: "card",
+      },
+      {
+        src: "/projects/stash/product-upload.png",
+        alt: "Product upload — form with file drop zone and media fields",
+        type: "card",
+      },
+      {
+        src: "/projects/stash/product-draft.png",
+        alt: "Seller product list — draft product alongside published listings",
+        type: "card",
+      },
+      {
+        src: "/projects/stash/cart.png",
+        alt: "Cart — items, seller info, and running total",
+        type: "card",
+      },
+      {
+        src: "/projects/stash/wishlist.png",
+        alt: "Wishlist — saved products grid",
+        type: "card",
+      },
+      {
+        src: "/projects/stash/buyer-dashboard.png",
+        alt: "Buyer dashboard — purchase count and total spent",
+        type: "card",
+      },
+      {
+        src: "/projects/stash/buyer-purchases.png",
+        alt: "Purchase history — orders with downloads and refund status",
+        type: "card",
+      },
+
+      {
+        src: "/projects/stash/admin-dashboard.png",
+        alt: "Admin dashboard — platform-wide users, products, orders, and revenue",
+        type: "card",
+      },
+      {
+        src: "/projects/stash/admin-users.png",
+        alt: "Admin user management table with role badges",
+        type: "card",
+      },
+      {
+        src: "/projects/stash/admin-products.png",
+        alt: "Admin product management table across all sellers",
+        type: "card",
+      },
+
+      {
+        src: "/projects/stash/admin-refunds.png",
+        alt: "Admin refund management — pending refund requests",
+        type: "card",
+      },
+    ],
+    live: "https://stash-green-iota.vercel.app/",
+    github: "https://github.com/Dev-EthanR/stash",
   },
   {
     title: "Entertainment Web App",
@@ -344,384 +711,4 @@ export const projects: Project[] = [
     live: "https://note-taking-nine-blond.vercel.app",
     github: "https://github.com/Dev-EthanR/note-taking",
   },
-
-  {
-    title: "Password Generator",
-    slug: "password-generator",
-    description:
-      "Password Generator is a simple web application focused on helping users create secure passwords quickly and efficiently. Users can customize password length, evaluate password strength, and copy generated passwords directly to the clipboard with a single click.",
-    concept:
-      "Generates strong and secure passwords with customizable settings and password strength feedback.",
-    displayTechnologies: ["JavaScript"],
-    technologies: ["HTML", "CSS", "JavaScript"],
-    features: [
-      {
-        title: "Secure Password Generation",
-        description: "Generate randomized secure passwords instantly.",
-      },
-      {
-        title: "Adjustable Password Length",
-        description: "Customize password length based on user preferences.",
-      },
-      {
-        title: "Clipboard Support",
-        description: "Copy generated passwords with one click.",
-      },
-      {
-        title: "Password Strength Indicator",
-        description: "Display password strength feedback visually.",
-      },
-    ],
-    futureImprovements: [],
-    thumbnail: {
-      src: "/projects/password-generator/home.png",
-      alt: "Password Generator homepage with generated password",
-    },
-    gallery: [
-      {
-        src: "/projects/password-generator/generate.png",
-        alt: "Generator — character options and length slider",
-        type: "feature",
-      },
-      {
-        src: "/projects/password-generator/copy.png",
-        alt: "Copy to clipboard — one-click copy interaction",
-        type: "feature",
-      },
-      {
-        src: "/projects/password-generator/weak.png",
-        alt: "Strength indicator — weak password visual feedback",
-        type: "feature",
-      },
-    ],
-    live: "https://password-generator-app-pearl.vercel.app/",
-    github: "https://github.com/Dev-EthanR/password-generator-app",
-  },
-
-  {
-    title: "BMI Calculator",
-    slug: "bmi-calculator",
-    description:
-      "BMI Calculator is a clean and user-friendly application that helps users calculate their Body Mass Index based on height and weight inputs. The application supports both metric and imperial systems, provides instant feedback, and displays BMI categories with corresponding health messages.",
-    concept:
-      "Allows users to calculate BMI instantly using metric or imperial measurement systems.",
-    displayTechnologies: ["JavaScript"],
-    technologies: ["HTML", "SASS", "JavaScript"],
-    features: [
-      {
-        title: "Instant BMI Calculation",
-        description:
-          "Calculate BMI immediately after entering height and weight.",
-      },
-      {
-        title: "BMI Category Feedback",
-        description: "Display BMI category and result messaging.",
-      },
-      {
-        title: "Dual Measurement Support",
-        description: "Supports both metric and imperial systems.",
-      },
-      {
-        title: "Responsive Interface",
-        description: "Optimized for mobile, tablet, and desktop devices.",
-      },
-    ],
-    futureImprovements: [],
-    thumbnail: {
-      src: "/projects/bmi-calculator/home.png",
-      alt: "BMI Calculator homepage interface",
-    },
-    gallery: [
-      {
-        src: "/projects/bmi-calculator/mobile.png",
-        alt: "Mobile layout — calculator on small screen",
-        type: "mobile",
-      },
-      {
-        src: "/projects/bmi-calculator/tablet.png",
-        alt: "Tablet layout — mid-size responsive view",
-        type: "card",
-      },
-      {
-        src: "/projects/bmi-calculator/page.png",
-        alt: "Full page — complete calculator interface",
-        type: "desktop",
-      },
-      {
-        src: "/projects/bmi-calculator/metric.png",
-        alt: "Metric mode — height and weight in cm and kg",
-        type: "card",
-      },
-      {
-        src: "/projects/bmi-calculator/imperial.png",
-        alt: "Imperial mode — height and weight in ft and lbs",
-        type: "card",
-      },
-    ],
-    live: "https://bmi-calculator-seven-kappa.vercel.app/",
-    github: "https://github.com/Dev-EthanR/bmi-calculator/tree/main",
-  },
-
-  {
-    title: "Frontend Quiz App",
-    slug: "frontend-quiz-app",
-    description:
-      "Frontend Quiz App is an engaging educational application that allows users to test their understanding of frontend topics including HTML, CSS, JavaScript, and Accessibility. The app provides instant answer feedback, score summaries, and responsive layouts for a smooth experience across all devices.",
-    concept:
-      "Tests users on frontend development topics through interactive multiple-choice quizzes.",
-    displayTechnologies: ["JavaScript"],
-    technologies: ["HTML", "CSS", "JavaScript"],
-    features: [
-      {
-        title: "Multiple Choice Questions",
-        description: "Answer frontend-related quiz questions interactively.",
-      },
-      {
-        title: "Instant Feedback",
-        description: "Receive immediate feedback after each answer.",
-      },
-      {
-        title: "Final Score Summary",
-        description: "Review quiz performance at the end of each session.",
-      },
-      {
-        title: "Responsive Design",
-        description: "Optimized for mobile, tablet, and desktop screens.",
-      },
-    ],
-    futureImprovements: [
-      {
-        title: "Question Timer",
-        description: "Introduce countdown timers for each question.",
-      },
-      {
-        title: "Score Tracking",
-        description: "Store and display previous quiz scores.",
-      },
-    ],
-    thumbnail: {
-      src: "/projects/frontend-quiz/home.png",
-      alt: "Frontend Quiz App homepage",
-    },
-    gallery: [
-      {
-        src: "/projects/frontend-quiz/select.png",
-        alt: "Answer selection — multiple choice question",
-        type: "card",
-      },
-      {
-        src: "/projects/frontend-quiz/correct.png",
-        alt: "Correct answer — instant feedback state",
-        type: "card",
-      },
-      {
-        src: "/projects/frontend-quiz/incorrect.png",
-        alt: "Incorrect answer — error feedback state",
-        type: "card",
-      },
-      {
-        src: "/projects/frontend-quiz/endscreen.png",
-        alt: "End screen — final score summary",
-        type: "card",
-      },
-    ],
-    live: "https://frontend-quiz-app-jade.vercel.app/",
-    github: "https://github.com/Dev-EthanR/frontend-quiz-app",
-  },
 ];
-
-/*
-{
-  id: 4,
-  title: "Quizly",
-  slug: "quizly",
-  description:
-    "Quizly is a real-time multiplayer quiz platform where a host creates a quiz, players join via a room code, and everyone answers questions simultaneously. Live leaderboard updates after each round and an in-game chat channel run in parallel — all powered by WebSockets.",
-  concept:
-    "Real-time multiplayer quiz game with live scoring, presence, and in-game chat — all synced across players via WebSockets.",
-  displayTechnologies: ["Next.js", "TypeScript", "Socket.io", "PostgreSQL"],
-  technologies: [
-    "Next.js",
-    "React",
-    "TypeScript",
-    "TailwindCSS",
-    "Socket.io",
-    "Prisma",
-    "PostgreSQL",
-    "NextAuth",
-    "Redis",
-    "Zod",
-  ],
-  features: [
-    {
-      title: "Real-time Multiplayer",
-      description:
-        "Players join a room via a code and answer questions simultaneously. All game state is synced in real time via Socket.io.",
-    },
-    {
-      title: "Live Leaderboard",
-      description:
-        "Leaderboard updates after every question with animated position changes, points earned this round, and total scores.",
-    },
-    {
-      title: "In-game Live Chat",
-      description:
-        "A parallel chat channel runs alongside the game. Players can send messages, quick reactions, and see system events like joins and round starts.",
-    },
-    {
-      title: "Host Controls",
-      description:
-        "The host creates the quiz, controls the lobby, starts the game, and advances rounds. Players see a waiting state until the host acts.",
-    },
-  ],
-  futureImprovements: [
-    {
-      title: "Achievements",
-      description:
-        "Award badges for milestones like first win, perfect score, and fastest answer.",
-    },
-    {
-      title: "Public Quiz Library",
-      description:
-        "Let hosts publish quizzes publicly so other users can discover and host them.",
-    },
-  ],
-  thumbnail: {
-    src: "/projects/quizly/desktop.png",
-    alt: "Quizly — live question screen with timer and answer options",
-  },
-  gallery: [
-    {
-      src: "/projects/quizly/lobby.png",
-      alt: "Lobby — players joined with room code and ready states",
-      type: "feature",
-    },
-    {
-      src: "/projects/quizly/question.png",
-      alt: "Question screen — live timer, answer grid, and chat sidebar",
-      type: "feature",
-    },
-    {
-      src: "/projects/quizly/results.png",
-      alt: "Round results — correct answer reveal and leaderboard update",
-      type: "card",
-    },
-    {
-      src: "/projects/quizly/final.png",
-      alt: "Final results — podium, full leaderboard, and post-game chat",
-      type: "card",
-    },
-    {
-      src: "/projects/quizly/mobile.png",
-      alt: "Mobile layout — question screen with slide-up chat drawer",
-      type: "mobile",
-    },
-  ],
-  live: "https://quizly.vercel.app",
-  github: "https://github.com/Dev-EthanR/quizly",
-}
-  */
-
-/*
-{
-  id: 5,
-  title: "Marketa",
-  slug: "marketa",
-  description:
-    "Marketa is a multi-vendor digital goods marketplace where sellers upload and sell digital products — UI kits, fonts, icon packs, code snippets, and templates. Buyers browse, purchase, and instantly download. Admins manage the platform, approve sellers, and handle refunds. Stripe Connect powers split payouts between sellers and the platform.",
-  concept:
-    "Multi-vendor digital goods marketplace with three-role access, Stripe Connect payouts, S3 file storage, and signed download URLs.",
-  displayTechnologies: ["Next.js", "TypeScript", "Stripe Connect", "AWS S3"],
-  technologies: [
-    "Next.js",
-    "React",
-    "TypeScript",
-    "TailwindCSS",
-    "Prisma",
-    "PostgreSQL",
-    "NextAuth",
-    "Stripe Connect",
-    "AWS S3",
-    "Redis",
-    "Zod",
-    "Resend",
-  ],
-  features: [
-    {
-      title: "Multi-vendor Stripe Connect",
-      description:
-        "Sellers onboard via Stripe Connect Express. Every purchase splits automatically — seller receives their cut, platform takes a fee. Payouts tracked per seller.",
-    },
-    {
-      title: "Role-based Access Control",
-      description:
-        "Three roles — admin, seller, and buyer — each with a separate dashboard and permissions. Sellers apply and require admin approval before listing products.",
-    },
-    {
-      title: "S3 File Uploads + Signed URLs",
-      description:
-        "Sellers upload product files and thumbnails to AWS S3. Buyers receive a time-limited signed download URL only after a confirmed payment.",
-    },
-    {
-      title: "Webhook-driven Order Flow",
-      description:
-        "Stripe webhooks handle payment confirmation, payout notifications, and refund processing. Download access is granted server-side on payment success.",
-    },
-    {
-      title: "Admin Dashboard",
-      description:
-        "Platform-wide view of all transactions, seller approvals, refund requests, and revenue. Admins can approve or reject sellers and issue refunds directly.",
-    },
-  ],
-  futureImprovements: [
-    {
-      title: "Product Reviews",
-      description:
-        "Allow buyers to leave star ratings and written reviews on purchased products.",
-    },
-    {
-      title: "Discount Codes",
-      description:
-        "Sellers can create Stripe discount codes for their own products, managed via the seller dashboard.",
-    },
-  ],
-  thumbnail: {
-    src: "/projects/marketa/desktop.png",
-    alt: "Marketa — product listing page with category filters and product cards",
-  },
-  gallery: [
-    {
-      src: "/projects/marketa/storefront.png",
-      alt: "Storefront — featured products, categories, and trending row",
-      type: "feature",
-    },
-    {
-      src: "/projects/marketa/product.png",
-      alt: "Product detail — preview images, description, and buy button",
-      type: "feature",
-    },
-    {
-      src: "/projects/marketa/seller-dashboard.png",
-      alt: "Seller dashboard — revenue chart, product list, and payout history",
-      type: "card",
-    },
-    {
-      src: "/projects/marketa/admin.png",
-      alt: "Admin dashboard — seller approvals, transactions, and refund requests",
-      type: "card",
-    },
-    {
-      src: "/projects/marketa/upload.png",
-      alt: "Product upload — form with file drop zone and thumbnail preview",
-      type: "card",
-    },
-    {
-      src: "/projects/marketa/mobile.png",
-      alt: "Mobile layout — product grid with bottom sheet filters",
-      type: "mobile",
-    },
-  ],
-  live: "https://marketa.vercel.app",
-  github: "https://github.com/Dev-EthanR/marketa",
-}
-  */
