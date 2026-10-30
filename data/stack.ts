@@ -23,7 +23,7 @@ export const stack: Stack[] = [
   // backend
   { title: "Node.js", src: "/badges/nodejs.png", arsenal: "backend" },
   { title: "Express.js", src: "/badges/express.png", arsenal: "backend" },
-  { title: "PostgreSQL", src: "/badges/postgresql.png", arsenal: "backend" },
+  { title: "PostgreSQL", src: "/badges/postgresql.webp", arsenal: "backend" },
   { title: "SQL Server", src: "/badges/sqlserver.webp", arsenal: "backend" },
   { title: "Prisma", src: "/badges/prisma.jpg", arsenal: "backend" },
   { title: "C#", src: "/badges/csharp.avif", arsenal: "backend" },
